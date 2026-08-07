@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Grainlify Docs',
-  tagline: 'Technical documentation for the Grainlify platform',
+  tagline: 'How to use Grainlify, and how it\'s built',
   favicon: 'img/favicon.ico',
 
   future: {

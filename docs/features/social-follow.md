@@ -4,72 +4,42 @@ sidebar_position: 3
 
 # Social Follow Program
 
-Follow Grainlify on GitHub, Telegram, and LinkedIn; upload a screenshot as
-proof for each; once all three are approved by an admin, earn a combined
-**500 points** (5x a single referral).
+Follow Grainlify on GitHub, Telegram, and LinkedIn to earn a bonus **500
+points** — five times what a single referral is worth.
 
-## Why screenshots, not automated verification
+## What you get
 
-Automated "does user X follow us" checks were evaluated per platform and
-ruled out:
+**500 points**, credited once, after you've followed us on all three
+platforms and each follow has been confirmed.
 
-- **GitHub** has no API to check whether a user follows an *organization* —
-  only user-to-user follow checks exist (`GET /users/{username}/following/{target_user}`).
-- **LinkedIn**'s Community Management API only returns aggregate follower
-  *counts* for pages you administer, never an individual "does member X
-  follow page Y" lookup. Scraping to work around this would violate
-  LinkedIn's ToS.
-- **Telegram** *is* technically verifiable (`getChatMember` via a bot added
-  as channel admin), but only for users who've gone through a "Connect
-  Telegram" login flow to prove their numeric Telegram user ID — that
-  identity-linking flow doesn't exist yet (the `telegram` profile field
-  today is unverified free text).
+## How to earn it
 
-Given that, verification is manual: users upload a screenshot, an admin
-reviews and approves or rejects it. This is honest about being gameable in
-principle — worth knowing given the reward is real points — but simple to
-ship and consistent across all three platforms.
+1. Go to **Settings → Rewards**.
+2. Follow Grainlify on each platform:
+   - **GitHub** — follow [github.com/Grainlify](https://github.com/Grainlify)
+   - **Telegram** — follow our channel
+   - **LinkedIn** — follow our page
+3. Take a screenshot showing you're following, and upload it for that
+   platform in the Rewards tab.
+4. Repeat for all three. Each one shows a status: **pending review**,
+   **approved**, or **rejected**.
+5. Once all three are approved, your 500 points are credited automatically
+   and you'll get a notification.
 
-## How it works
+## What makes a good screenshot
 
-1. `POST /social-follow/:platform/submit` with `{ "screenshot": "data:image/..." }`
-   — a base64 data URL, same storage convention as `ecosystems.logo_url` (no
-   object-storage/multipart infrastructure needed). Capped at ~5MB before
-   base64 inflation, validated server-side to start with `data:image/`.
-2. Resubmission (e.g. after a rejection) **upserts** the same row
-   (`ON CONFLICT (user_id, platform)`), resetting it to `pending` — there's
-   only ever one current proof per platform per user.
-3. An admin reviews via `GET /admin/social-follow/submissions?status=pending`,
-   then approves or rejects each one.
-4. `maybeCompleteSocialFollow` (`internal/handlers/social_follow.go`) runs
-   after every approval: counts this user's `approved` submissions, and once
-   all three platforms are approved, inserts a `social_follow_completions`
-   row (`user_id` as primary key — the natural guard against double-award),
-   a `point_ledger` entry, and fires the `social_follow_completed`
-   notification.
+Make sure the screenshot clearly shows:
 
-## Data model
+- The Grainlify account/page/channel you're following
+- That your account is the one following it (e.g. a visible "Following"
+  button or your profile in the followers list)
 
-- `social_follow_submissions` — one row per `(user_id, platform)`, `status`
-  (`pending`/`approved`/`rejected`), `rejection_reason`, `reviewed_by`,
-  `reviewed_at`.
-- `social_follow_completions` — `user_id` (primary key), `points_awarded`,
-  `completed_at`.
+If a screenshot is rejected, you'll see why — just fix it and upload again;
+there's no limit on retries.
 
-See `migrations/000031_points_and_rewards.up.sql`.
+## Why proof instead of automatic checks
 
-## API
-
-| Route | Auth | Description |
-|---|---|---|
-| `POST /social-follow/:platform/submit` | required | Submit or resubmit proof. |
-| `GET /social-follow/me` | required | Per-platform status + completion state. |
-| `GET /admin/social-follow/submissions` | admin | Review queue, `?status=`. |
-| `POST /admin/social-follow/submissions/:id/approve` | admin | Approve; may trigger completion. |
-| `POST /admin/social-follow/submissions/:id/reject` | admin | Reject with an optional reason. |
-
-## Frontend
-
-- Settings → Rewards tab — upload control per platform, status badges,
-  rejection reason shown inline.
-- Admin panel → Social Follow Submissions — screenshot preview, approve/reject.
+GitHub and LinkedIn don't give us a way to automatically confirm a follow, so
+we review proof by hand for all three platforms — that way the process is
+the same and fair regardless of which platform you're completing. Reviews
+are typically quick, but during busy periods it may take a little longer.

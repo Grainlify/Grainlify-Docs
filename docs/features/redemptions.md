@@ -2,90 +2,44 @@
 sidebar_position: 4
 ---
 
-# Points → USDC Redemption
+# Turning Points Into USDC
 
-Users spend points from their balance to request a USDC payout to a Stellar
-wallet address. **The actual on-chain transfer is not automated** — an admin
-sends the USDC manually and then marks the request as paid.
-
-## Why payout isn't automated
-
-Two things would need to exist first, and neither does yet:
-
-1. **A funded treasury Stellar wallet.** Checked both local config and
-   production Railway variables — no `SOROBAN_SOURCE_SECRET` or related
-   config exists anywhere. There is no account to send USDC *from*.
-2. **The right on-chain primitive.** The existing Soroban contract
-   (`internal/soroban`) is a bounty-escrow client
-   (`Init`/`LockFunds`/`ReleaseFunds`/`Refund`) — built for a two-party
-   lock-then-release flow tied to a specific bounty, not a "redeem points on
-   demand" direct payment. Wiring real payout means building a simpler direct
-   Stellar payment path, not reusing the escrow contract.
-
-This is intentionally deferred (matches the project's broader "contracts come
-later" sequencing). What's built now is the full request/review/points
-lifecycle around redemption, so the moment a treasury wallet and payout path
-exist, only the actual transfer step needs to be added.
-
-## How it works
-
-1. `POST /redemptions` with `{ points, stellar_wallet_address }`. Validates:
-   `points >= minRedemptionPoints` (100), the wallet address is a real,
-   checksum-valid Stellar account ID (`strkey.IsValidEd25519PublicKey` from
-   the Stellar Go SDK — not just a regex), and the user's ledger balance
-   covers the request.
-2. Deducts the points **immediately**, at request time — not at payout time.
-   This is a single DB transaction: insert the `redemptions` row
-   (`status = 'pending'`) and a negative `point_ledger` entry together, so
-   the same points can never fund two simultaneous pending requests.
-3. An admin reviews via `GET /admin/redemptions?status=pending`, then:
-   - **Mark paid** — after sending the USDC manually. Sets `status = 'paid'`,
-     fires `redemption_paid`.
-   - **Reject** — sets `status = 'rejected'` and inserts a *positive*
-     reversing `point_ledger` entry (`reason = 'redemption_reversal'`) in the
-     same transaction, refunding the points. Fires `redemption_rejected`.
+Points you've earned from referrals, the social-follow program, and rewards
+aren't just a number — you can redeem them for real USDC, sent straight to
+your own wallet.
 
 ## Conversion rate
 
-`usdcPerPoint = 0.01` and `minRedemptionPoints = 100`
-(`internal/handlers/redemptions.go`) — a starting product default, not
-derived from anything else. At this rate a completed referral (100 points)
-is worth $1, and the social-follow program (500 points) is worth $5. Flagged
-as a value the operator should revisit; it's a single named constant to
-change.
+**100 points = $1 USDC.**
 
-## Points balance
+So a completed referral (100 points) is worth $1, and the social-follow
+bonus (500 points) is worth $5. Your full point balance and its USDC value
+are always visible at the top of **Settings → Rewards**.
 
-`point_ledger` is the single source of truth for every point-earning or
-point-spending event across every reward program (referrals, social-follow,
-redemptions, redemption reversals). A user's balance is `SUM(amount)` at read
-time — there's no separate mutable balance column to drift out of sync with
-its own history.
+## How to redeem
 
-## Data model
+1. Go to **Settings → Rewards**.
+2. Enter how many points you want to redeem (minimum **100 points**, i.e.
+   $1) — you'll see the USDC amount update live as you type.
+3. Enter the Stellar wallet address you want paid out to.
+4. Submit. Your points are set aside right away, so you'll always see an
+   accurate balance even while a request is being processed.
 
-- `point_ledger` — `user_id`, `amount` (positive = earned, negative =
-  spent/reversed), `reason`, `reference_id`.
-- `redemptions` — `user_id`, `points_spent`, `usdc_amount`,
-  `stellar_wallet_address`, `status` (`pending`/`paid`/`rejected`),
-  `admin_note`, `reviewed_by`, `reviewed_at`.
+## What happens next
 
-See `migrations/000031_points_and_rewards.up.sql`.
+Every redemption request is reviewed by our team before payout:
 
-## API
+- **Paid** — the USDC has been sent to your wallet, and you'll get a
+  notification.
+- **Rejected** — for example, if the wallet address looks wrong. Your
+  points are refunded to your balance automatically, and you'll get a
+  notification explaining why so you can fix it and try again.
 
-| Route | Auth | Description |
-|---|---|---|
-| `GET /points/me` | required | Current balance + `usdc_per_point` + `min_redemption_points`. |
-| `POST /redemptions` | required | Create a request; deducts points immediately. |
-| `GET /redemptions/me` | required | Caller's own request history. |
-| `GET /admin/redemptions` | admin | Review queue, `?status=`. |
-| `POST /admin/redemptions/:id/mark-paid` | admin | Record a manual payout. |
-| `POST /admin/redemptions/:id/reject` | admin | Reject and refund. |
+You can check the status of every request you've made — pending, paid, or
+rejected — right there in the Rewards tab.
 
-## Frontend
+## Tips for a smooth redemption
 
-- Settings → Rewards tab — balance with USDC equivalent, redeem form (live
-  USDC preview), request history with status.
-- Admin panel → Points Redemptions — wallet address (click to copy), mark
-  paid / reject with an optional reason.
+- Double-check your wallet address before submitting — this is a Stellar
+  address (starts with `G`), not any other type of wallet.
+- Make sure the address is one you control and can receive USDC on.

@@ -1,30 +1,225 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Grainlify brand theme — colors, font, and the glassmorphic warm-neutral
+ * look pulled directly from Grainlify-Frontend's src/styles/theme.css and
+ * fonts.css, so this site reads as the same product, not a generic
+ * Docusaurus install with a different logo.
  */
 
-/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Gold accent (--primary in the app), same value in both themes. */
+  --ifm-color-primary: #c9983a;
+  --ifm-color-primary-dark: #b58a34;
+  --ifm-color-primary-darker: #aa8231;
+  --ifm-color-primary-darkest: #8c6b28;
+  --ifm-color-primary-light: #dda748;
+  --ifm-color-primary-lighter: #e2b158;
+  --ifm-color-primary-lightest: #eec883;
+
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(201, 152, 58, 0.15);
+
+  --ifm-global-radius: 0.75rem;
+  --ifm-button-border-radius: 0.75rem;
+  --ifm-card-border-radius: 1rem;
+  --ifm-alert-border-radius: 0.75rem;
+
+  /* Light-mode warm neutral palette, matching theme.css's --background/--foreground. */
+  --gl-bg-gradient: linear-gradient(135deg, #e8dfd0 0%, #d4c5b0 50%, #c9b89a 100%);
+  --gl-text: #2d2820;
+  --gl-text-muted: #7a6b5a;
+  --gl-glass-bg: rgba(255, 255, 255, 0.35);
+  --gl-glass-border: rgba(201, 152, 58, 0.2);
+  --gl-glass-blur: 40px;
+
+  --ifm-background-color: #e8dfd0;
+  --ifm-font-color-base: var(--gl-text);
+  --ifm-heading-color: var(--gl-text);
+  --ifm-navbar-background-color: var(--gl-glass-bg);
+  --ifm-footer-background-color: #2d2820;
+  --ifm-footer-color: #d4c5b0;
+  --ifm-footer-link-color: #e8dfd0;
+  --ifm-footer-title-color: #f5efe5;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Dark-mode warm neutral palette, matching theme.css's .dark block. */
+  --gl-bg-gradient: linear-gradient(135deg, #1a1512 0%, #231c17 50%, #2d241d 100%);
+  --gl-text: #f5efe5;
+  --gl-text-muted: #b8a898;
+  --gl-glass-bg: rgba(45, 40, 32, 0.4);
+  --gl-glass-border: rgba(255, 255, 255, 0.1);
+
+  --ifm-background-color: #1a1512;
+  --ifm-font-color-base: var(--gl-text);
+  --ifm-heading-color: var(--gl-text);
+  --ifm-navbar-background-color: var(--gl-glass-bg);
+  --ifm-footer-background-color: #14100d;
+  --docusaurus-highlighted-code-line-bg: rgba(201, 152, 58, 0.2);
+
+  --ifm-color-primary: #d4af37;
+  --ifm-color-primary-dark: #c29f2c;
+  --ifm-color-primary-darker: #b69529;
+  --ifm-color-primary-darkest: #967a22;
+  --ifm-color-primary-light: #dabf51;
+  --ifm-color-primary-lighter: #e0c661;
+  --ifm-color-primary-lightest: #ead688;
+}
+
+/* Fixed warm gradient body background, same three-stop diagonal used across
+   the app's full-screen pages (SignInPage, Dashboard, etc.). */
+html,
+body {
+  background: var(--gl-bg-gradient);
+  background-attachment: fixed;
+}
+
+/* Glassmorphic navbar: translucent + blurred, not a flat opaque bar. */
+.navbar {
+  background: var(--gl-glass-bg);
+  backdrop-filter: blur(var(--gl-glass-blur));
+  -webkit-backdrop-filter: blur(var(--gl-glass-blur));
+  border-bottom: 1px solid var(--gl-glass-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__title,
+.navbar__link {
+  font-weight: 600;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar and TOC as translucent panels rather than flat solid columns. */
+.theme-doc-sidebar-container {
+  background: transparent !important;
+  border-right: 1px solid var(--gl-glass-border) !important;
+}
+
+.menu {
+  background: var(--gl-glass-bg);
+  backdrop-filter: blur(var(--gl-glass-blur));
+  -webkit-backdrop-filter: blur(var(--gl-glass-blur));
+  border-radius: var(--ifm-card-border-radius);
+}
+
+.menu__link--active,
+.menu__link:hover {
+  background: rgba(201, 152, 58, 0.15);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+.table-of-contents {
+  border-left: 1px solid var(--gl-glass-border);
+}
+
+/* Content surface: a soft glass card instead of a flat page. */
+main .theme-doc-markdown {
+  background: var(--gl-glass-bg);
+  backdrop-filter: blur(var(--gl-glass-blur));
+  -webkit-backdrop-filter: blur(var(--gl-glass-blur));
+  border: 1px solid var(--gl-glass-border);
+  border-radius: 1.5rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 996px) {
+  main .theme-doc-markdown {
+    padding: 1.5rem;
+  }
+}
+
+/* Buttons: gold gradient, matching --gradient-primary. */
+.button--secondary,
+.button--primary {
+  background: linear-gradient(135deg, #c9983a 0%, #a67c2e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(162, 121, 44, 0.35);
+}
+
+.button--secondary:hover,
+.button--primary:hover {
+  box-shadow: 0 10px 30px rgba(162, 121, 44, 0.5);
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+/* Hero banner: warm gradient instead of Infima's flat primary block, with
+   the same soft glow-blur accents used behind the app's auth/landing pages. */
+.hero--primary {
+  --ifm-hero-background-color: transparent;
+  background: linear-gradient(135deg, #c9983a 0%, #a67c2e 60%, #8f6924 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--primary::before,
+.hero--primary::after {
+  content: '';
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero--primary::before {
+  top: -6rem;
+  left: -6rem;
+}
+
+.hero--primary::after {
+  bottom: -6rem;
+  right: -6rem;
+  background: rgba(212, 175, 55, 0.35);
+}
+
+.hero__title,
+.hero__subtitle {
+  position: relative;
+  z-index: 1;
+}
+
+/* Homepage feature cards as glass panels. */
+.features_t9lD,
+[class*='features_'] {
+  padding: 3rem 0;
+}
+
+/* Footer links pick up the gold accent on hover. */
+.footer__link-item:hover {
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+}
+
+.footer__title {
+  color: var(--ifm-footer-title-color, inherit);
+}
+
+/* Admonitions and code blocks: rounder, matching the app's soft corners. */
+.admonition,
+.theme-code-block,
+pre {
+  border-radius: var(--ifm-card-border-radius) !important;
+}
+
+/* Muted text (captions, secondary copy) uses the same warm muted tone as
+   the app's --muted-foreground rather than Infima's default grey. */
+.markdown > p,
+.markdown li {
+  color: var(--ifm-font-color-base);
 }

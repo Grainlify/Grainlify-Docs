@@ -1,44 +1,48 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Platform Features',
+    title: 'Earn Points & Rewards',
+    to: '/docs/features/referrals',
     description: (
       <>
-        How referrals, notifications, the social-follow program, and USDC
-        redemptions actually work under the hood.
+        Invite friends, follow us on social, and turn what you earn into
+        real USDC. See what you get and how to claim it.
       </>
     ),
   },
   {
-    title: 'Smart Contracts',
+    title: 'Stay in the Loop',
+    to: '/docs/features/notifications',
     description: (
       <>
-        Bounty escrow, program escrow, and the rest of the Soroban contract
-        suite — event schemas, fee arithmetic, security model.
+        Know the moment an issue is assigned to you, a PR merges, or a
+        reward lands — and control exactly what you hear about.
       </>
     ),
   },
   {
-    title: 'Reference',
+    title: 'Technical Reference',
+    to: '/docs/program-escrow/circuit-breaker',
     description: (
       <>
-        ABI stability, database schema, serialization formats, and gas
-        optimization notes for contributors working across the stack.
+        Building on Grainlify? Smart contract internals, event schemas, and
+        architecture notes for the Soroban contract suite.
       </>
     ),
   },
 ];
 
-function Feature({title, description}) {
+function Feature({title, to, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center padding-horiz--md">
+      <Link to={to} className={styles.featureCard}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
-      </div>
+      </Link>
     </div>
   );
 }

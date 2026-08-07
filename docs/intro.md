@@ -3,20 +3,29 @@ sidebar_position: 1
 slug: /intro
 ---
 
-# Grainlify Docs
+# Welcome to Grainlify Docs
 
-Technical documentation for the Grainlify platform, covering both the application
-(backend/frontend features) and the Soroban smart contract suite.
+Everything you need to know about using Grainlify — plus technical reference
+material for developers working on the platform.
 
-## Where to start
+## Using Grainlify
 
-- **[Platform Features](/docs/features/referrals)** — how referrals, notifications, the
-  social-follow program, and USDC redemptions actually work: data model, API
-  routes, and the reasoning behind key decisions.
-- **Smart contracts** — bounty escrow, program escrow, events, serialization,
-  and gas optimization notes, organized by contract in the sidebar.
-- **Reference** — ABI stability matrix, database schema, and other
-  cross-cutting technical references.
+Start here if you're a contributor or community member:
+
+- **[Referral Program](./features/referrals.md)** — invite people, earn points.
+- **[Notifications](./features/notifications.md)** — what we notify you
+  about, and how to customize it.
+- **[Social Follow Program](./features/social-follow.md)** — follow us,
+  earn a bonus.
+- **[Turning Points Into USDC](./features/redemptions.md)** — redeem what
+  you've earned.
+
+## Technical reference
+
+The rest of the sidebar covers the Soroban smart contract suite that powers
+Grainlify — bounty escrow, program escrow, events, database schema, and
+gas optimization notes. This section is written for developers and
+contributors working on the platform itself, not general users.
 
 ## Related repositories
 
