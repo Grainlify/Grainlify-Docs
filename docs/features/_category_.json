@@ -1,0 +1,8 @@
+{
+  "label": "Platform Features",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "How the referral program, notifications, social-follow rewards, and USDC redemptions actually work: data model, API routes, and the reasoning behind key decisions."
+  }
+}
