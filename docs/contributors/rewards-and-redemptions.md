@@ -20,17 +20,20 @@ can redeem them for real USDC, sent straight to your own wallet.
 **100 points = $1 USDC.**
 
 So a completed referral (100 points) is worth $1, and the social-follow
-bonus (500 points) is worth $5. Your full point balance and its USDC value
-are always visible at the top of **Settings → Rewards**.
+bonus (500 points) is worth $5.
 
 ## How to redeem
 
-1. Go to **Settings → Rewards**.
-2. Enter how many points you want to redeem (minimum **100 points**, i.e.
-   $1) — you'll see the USDC amount update live as you type.
-3. Enter the Stellar wallet address you want paid out to.
-4. Submit. Your points are set aside right away, so you'll always see an
-   accurate balance even while a request is being processed.
+Open **Redeem** in the sidebar — it's built like a currency swap: your
+points on one side, the USDC you'll receive on the other.
+
+1. Enter how many points you want to redeem (minimum **100 points**, i.e.
+   $1) — the USDC amount below updates live as you type. Use **Max** to
+   fill in your full balance.
+2. Enter the Stellar wallet address you want paid out to.
+3. Once everything looks right, hit **Redeem**. Your points are set aside
+   right away, so you'll always see an accurate balance even while a
+   request is being processed.
 
 We recommend **[verifying your identity](./verifying-your-identity.md)**
 before redeeming, since it's what we expect to have on file before sending a
@@ -47,7 +50,8 @@ Every redemption request is reviewed by our team before payout:
   notification explaining why so you can fix it and try again.
 
 You can check the status of every request you've made — pending, paid, or
-rejected — right there in the Rewards tab.
+rejected — in your redemption history right below the Redeem page's swap
+card.
 
 ## Tips for a smooth redemption
 
