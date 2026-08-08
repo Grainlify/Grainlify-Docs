@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Finding a Project or Issue
 
-Grainlify gives you two ways to find something to work on: a curated
-**Discover** feed, and a fully searchable **Browse** catalog.
+Grainlify gives you three ways to find something to work on: a curated
+**Discover** feed, a filterable **Browse** catalog, and global **Search**.
 
 ## Discover
 
@@ -35,6 +35,15 @@ to narrow it down:
 Combine filters to zero in — for example, Rust + Backend + Good first issues.
 Each result shows stars, forks, contributor count, and how many open issues
 and pull requests the project currently has.
+
+## Search
+
+Press **Cmd/Ctrl+K** anywhere in the dashboard (or open Search from the
+sidebar) to search projects, open issues, and contributors by name all in
+one place — useful when you already know roughly what you're looking for
+rather than browsing. Results link straight through: click a project to
+open it, an issue to open its apply page, or a contributor to view their
+profile.
 
 ## Reading a project page
 
