@@ -1,12 +1,19 @@
 ---
-sidebar_position: 4
+sidebar_position: 8
 ---
 
 # Turning Points Into USDC
 
-Points you've earned from referrals, the social-follow program, and rewards
-aren't just a number — you can redeem them for real USDC, sent straight to
-your own wallet.
+Points you've earned from **[referrals](./referrals.md)** and the
+**[Social Follow Program](./social-follow.md)** aren't just a number — you
+can redeem them for real USDC, sent straight to your own wallet.
+
+## How to earn points
+
+- **100 points** for every friend you refer who joins and verifies their
+  identity — see **[Referrals](./referrals.md)**.
+- **500 points** once for following us on GitHub, Telegram, and LinkedIn —
+  see **[Social Follow Program](./social-follow.md)**.
 
 ## Conversion rate
 
@@ -24,6 +31,10 @@ are always visible at the top of **Settings → Rewards**.
 3. Enter the Stellar wallet address you want paid out to.
 4. Submit. Your points are set aside right away, so you'll always see an
    accurate balance even while a request is being processed.
+
+We recommend **[verifying your identity](./verifying-your-identity.md)**
+before redeeming, since it's what we expect to have on file before sending a
+payout.
 
 ## What happens next
 

@@ -1,31 +1,32 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 slug: /intro
 ---
 
 # Welcome to Grainlify Docs
 
-Everything you need to know about using Grainlify — plus technical reference
-material for developers working on the platform.
+Grainlify connects open-source maintainers with contributors — maintainers
+list their projects and issues, contributors find work, build a public
+track record, and earn rewards along the way.
 
-## Using Grainlify
+## I'm a contributor
 
-Start here if you're a contributor or community member:
+Start with **[Getting Started as a Contributor](./contributors/getting-started.md)**
+to sign in, find your first issue, and see how ranks, referrals, and
+rewards work.
 
-- **[Referral Program](./features/referrals.md)** — invite people, earn points.
-- **[Notifications](./features/notifications.md)** — what we notify you
-  about, and how to customize it.
-- **[Social Follow Program](./features/social-follow.md)** — follow us,
-  earn a bonus.
-- **[Turning Points Into USDC](./features/redemptions.md)** — redeem what
-  you've earned.
+## I'm a maintainer
+
+Start with **[Getting Started as a Maintainer](./maintainers/getting-started.md)**
+to connect your project and start reviewing applications from contributors.
 
 ## Technical reference
 
-The rest of the sidebar covers the Soroban smart contract suite that powers
-Grainlify — bounty escrow, program escrow, events, database schema, and
-gas optimization notes. This section is written for developers and
-contributors working on the platform itself, not general users.
+The **Technical Reference** section of the sidebar covers the Soroban smart
+contract suite that powers Grainlify — bounty escrow, program escrow,
+events, database schema, and gas optimization notes. It's written for
+developers working on the Grainlify platform itself, not for contributors
+or maintainers using the product day to day.
 
 ## Related repositories
 

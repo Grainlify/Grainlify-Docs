@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # Referral Program
@@ -10,7 +10,7 @@ verifies their account.
 ## What you get
 
 **100 points** for every successful referral, credited straight to your
-account balance. Points can be [redeemed for USDC](./redemptions.md).
+account balance. Points can be [redeemed for USDC](./rewards-and-redemptions.md).
 
 ## How it works
 
@@ -20,9 +20,9 @@ account balance. Points can be [redeemed for USDC](./redemptions.md).
    normally share a link works.
 3. When someone signs up through your link, it shows up in your Referrals
    tab as **pending**.
-4. Once they sign in with GitHub and complete identity verification, your
-   referral turns to **completed** and 100 points land in your balance
-   automatically.
+4. Once they sign in with GitHub and complete
+   **[identity verification](./verifying-your-identity.md)**, your referral
+   turns to **completed** and 100 points land in your balance automatically.
 
 ## Why verification matters
 

@@ -5,32 +5,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Earn Points & Rewards',
-    to: '/docs/features/referrals',
+    title: 'For Contributors',
+    to: '/docs/contributors',
     description: (
       <>
-        Invite friends, follow us on social, and turn what you earn into
-        real USDC. See what you get and how to claim it.
+        Find issues, apply, and get your work merged. Earn points through
+        referrals and social follows, and redeem them for real USDC.
       </>
     ),
   },
   {
-    title: 'Stay in the Loop',
-    to: '/docs/features/notifications',
+    title: 'For Maintainers',
+    to: '/docs/maintainers',
     description: (
       <>
-        Know the moment an issue is assigned to you, a PR merges, or a
-        reward lands — and control exactly what you hear about.
+        List your project, review applications from contributors, and keep
+        issues and pull requests in sync automatically.
       </>
     ),
   },
   {
     title: 'Technical Reference',
-    to: '/docs/program-escrow/circuit-breaker',
+    to: '/docs/reference/program-escrow/circuit-breaker',
     description: (
       <>
-        Building on Grainlify? Smart contract internals, event schemas, and
-        architecture notes for the Soroban contract suite.
+        Building on Grainlify itself? Smart contract internals, event
+        schemas, and architecture notes for the Soroban contract suite.
       </>
     ),
   },

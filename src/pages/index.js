@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Technical documentation for the Grainlify platform: contracts, backend features, and reference material.">
+      description="Guides for contributors and maintainers using Grainlify, plus technical reference material for developers building on the platform.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

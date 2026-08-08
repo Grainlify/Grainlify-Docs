@@ -90,8 +90,9 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {label: 'Getting Started', to: '/docs/intro'},
-              {label: 'Platform Features', to: '/docs/features/referrals'},
+              {label: 'Introduction', to: '/docs/intro'},
+              {label: 'For Contributors', to: '/docs/contributors'},
+              {label: 'For Maintainers', to: '/docs/maintainers'},
             ],
           },
           {

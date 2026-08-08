@@ -1,24 +1,30 @@
 ---
-sidebar_position: 2
+sidebar_position: 9
 ---
 
 # Notifications
 
-Stay on top of everything happening with your issues, pull requests, and
-rewards — without checking the dashboard constantly.
+Stay on top of everything happening with your applications, pull requests,
+and rewards — without checking the dashboard constantly.
 
 ## What you'll be notified about
+
+As a contributor:
 
 | You'll hear from us when... |
 |---|
 | A maintainer assigns you to an issue you applied for |
 | Your application to an issue isn't accepted |
 | A pull request you opened gets merged |
-| You receive a reward for a completed contribution |
 | A referral you made is completed and pays out |
 | Your social-follow proof is approved and pays out |
 | A points redemption you requested is paid or rejected |
-| A contributor applies to an issue on one of your projects (for maintainers) |
+
+If you also maintain projects on Grainlify, you'll additionally hear about:
+
+| You'll hear from us when... |
+|---|
+| A contributor applies to an issue on one of your projects |
 
 ## In-app and email
 
