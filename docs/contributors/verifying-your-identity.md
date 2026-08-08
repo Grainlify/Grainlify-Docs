@@ -19,7 +19,7 @@ confirm real people are behind the accounts earning and receiving rewards.
 
 ## How to verify
 
-1. Go to **Settings → Billing**.
+1. Go to **Settings → Billing Profiles**.
 2. Click **Verify KYC**.
 3. Complete the verification steps in the window that opens — you'll need a
    photo ID and a quick face match.
