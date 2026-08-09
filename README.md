@@ -4,7 +4,7 @@ Technical documentation for the Grainlify platform — platform features
 (referrals, notifications, rewards) and the Soroban smart contract suite.
 Built with [Docusaurus](https://docusaurus.io/).
 
-Live at [docs.grainlify.0xo.in](https://docs.grainlify.0xo.in).
+Live at [docs.grainlify.com](https://docs.grainlify.com).
 
 ## Local development
 

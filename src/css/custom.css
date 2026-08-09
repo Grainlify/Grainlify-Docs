@@ -27,6 +27,11 @@
   --ifm-card-border-radius: 1rem;
   --ifm-alert-border-radius: 0.75rem;
 
+  /* Whole-sidebar collapse/expand toggle (theme-classic's built-in
+     hideable-sidebar buttons) - glass tones instead of Infima's flat grey. */
+  --docusaurus-collapse-button-bg: rgba(201, 152, 58, 0.08);
+  --docusaurus-collapse-button-bg-hover: rgba(201, 152, 58, 0.18);
+
   /* Light-mode warm neutral palette, matching theme.css's --background/--foreground. */
   --gl-bg-gradient: linear-gradient(135deg, #e8dfd0 0%, #d4c5b0 50%, #c9b89a 100%);
   --gl-text: #2d2820;
@@ -34,15 +39,33 @@
   --gl-glass-bg: rgba(255, 255, 255, 0.35);
   --gl-glass-border: rgba(201, 152, 58, 0.2);
   --gl-glass-blur: 40px;
+  /* Fully opaque surface for the navbar and search results - deliberately
+     not glass, so both stay readable over any page content behind them. */
+  --gl-opaque-surface: #f5efe5;
+  --gl-opaque-surface-raised: #ffffff;
 
   --ifm-background-color: #e8dfd0;
   --ifm-font-color-base: var(--gl-text);
   --ifm-heading-color: var(--gl-text);
-  --ifm-navbar-background-color: var(--gl-glass-bg);
-  --ifm-footer-background-color: #2d2820;
-  --ifm-footer-color: #d4c5b0;
-  --ifm-footer-link-color: #e8dfd0;
-  --ifm-footer-title-color: #f5efe5;
+  --ifm-navbar-background-color: var(--gl-opaque-surface);
+  --ifm-footer-background-color: transparent;
+  --ifm-footer-color: var(--gl-text-muted);
+  --ifm-footer-link-color: var(--gl-text-muted);
+  --ifm-footer-title-color: var(--gl-text);
+  --ifm-toc-border-color: var(--gl-glass-border);
+
+  /* @easyops-cn/docusaurus-search-local reads these instead of exposing
+     stable classnames (its own classes are CSS-modules, hashed at build).
+     Opaque, matching the navbar - not glass. */
+  --search-local-input-active-border-color: var(--ifm-color-primary);
+  --search-local-modal-background: var(--gl-opaque-surface);
+  --search-local-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --search-local-hit-background: var(--gl-opaque-surface-raised);
+  --search-local-hit-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  --search-local-hit-color: var(--gl-text);
+  --search-local-hit-active-color: #ffffff;
+  --search-local-highlight-color: var(--ifm-color-primary);
+  --search-local-muted-color: var(--gl-text-muted);
 }
 
 [data-theme='dark'] {
@@ -52,13 +75,30 @@
   --gl-text-muted: #b8a898;
   --gl-glass-bg: rgba(45, 40, 32, 0.4);
   --gl-glass-border: rgba(255, 255, 255, 0.1);
+  /* Fully opaque surface for the navbar and search results. */
+  --gl-opaque-surface: #231c17;
+  --gl-opaque-surface-raised: #2d241d;
 
   --ifm-background-color: #1a1512;
   --ifm-font-color-base: var(--gl-text);
   --ifm-heading-color: var(--gl-text);
-  --ifm-navbar-background-color: var(--gl-glass-bg);
-  --ifm-footer-background-color: #14100d;
+  --ifm-navbar-background-color: var(--gl-opaque-surface);
+  --ifm-footer-background-color: transparent;
+  --ifm-footer-color: var(--gl-text-muted);
+  --ifm-footer-link-color: var(--gl-text-muted);
+  --ifm-footer-title-color: var(--gl-text);
+  --ifm-toc-border-color: var(--gl-glass-border);
   --docusaurus-highlighted-code-line-bg: rgba(201, 152, 58, 0.2);
+
+  --docusaurus-collapse-button-bg: rgba(212, 175, 55, 0.1);
+  --docusaurus-collapse-button-bg-hover: rgba(212, 175, 55, 0.2);
+
+  --search-local-modal-background: var(--gl-opaque-surface);
+  --search-local-modal-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --search-local-hit-background: var(--gl-opaque-surface-raised);
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: var(--gl-text);
+  --search-local-muted-color: var(--gl-text-muted);
 
   --ifm-color-primary: #d4af37;
   --ifm-color-primary-dark: #c29f2c;
@@ -77,11 +117,10 @@ body {
   background-attachment: fixed;
 }
 
-/* Glassmorphic navbar: translucent + blurred, not a flat opaque bar. */
+/* Navbar: fully opaque (no glass/blur), so it stays solid over scrolled
+   content instead of letting the page show through. */
 .navbar {
-  background: var(--gl-glass-bg);
-  backdrop-filter: blur(var(--gl-glass-blur));
-  -webkit-backdrop-filter: blur(var(--gl-glass-blur));
+  background: var(--gl-opaque-surface);
   border-bottom: 1px solid var(--gl-glass-border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
@@ -95,6 +134,33 @@ body {
 .navbar__link--active {
   color: var(--ifm-color-primary);
 }
+
+/* Search box: a glass pill consistent with the rest of the navbar, not
+   Infima's default flat input. */
+.navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid var(--gl-glass-border);
+  border-radius: 999px;
+  color: var(--gl-text);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+[data-theme='dark'] .navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.navbar__search-input::placeholder {
+  color: var(--gl-text-muted);
+}
+
+.navbar__search-input:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px rgba(201, 152, 58, 0.2);
+}
+
+/* The search results dropdown itself is themed via the --search-local-*
+   variables above (its classnames are CSS-modules, hashed at build time,
+   so they aren't reachable from here). */
 
 /* Sidebar and TOC as translucent panels rather than flat solid columns. */
 .theme-doc-sidebar-container {
@@ -140,17 +206,19 @@ main .theme-doc-markdown {
   }
 }
 
-/* Buttons: gold gradient, matching --gradient-primary. */
-.button--secondary,
-.button--primary {
+/* Buttons: gold gradient, matching --gradient-primary. Excludes
+   .button--outline (e.g. the sidebar collapse toggle), which stays a
+   subtle glass icon button rather than a solid CTA. */
+.button--secondary:not(.button--outline),
+.button--primary:not(.button--outline) {
   background: linear-gradient(135deg, #c9983a 0%, #a67c2e 100%);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffffff;
   box-shadow: 0 6px 20px rgba(162, 121, 44, 0.35);
 }
 
-.button--secondary:hover,
-.button--primary:hover {
+.button--secondary:not(.button--outline):hover,
+.button--primary:not(.button--outline):hover {
   box-shadow: 0 10px 30px rgba(162, 121, 44, 0.5);
   color: #ffffff;
   opacity: 0.95;
@@ -200,7 +268,21 @@ main .theme-doc-markdown {
   padding: 3rem 0;
 }
 
-/* Footer links pick up the gold accent on hover. */
+/* Footer as a translucent glass panel, matching the navbar/sidebar treatment
+   instead of Infima's flat solid-dark block. */
+.footer {
+  background: var(--gl-glass-bg);
+  backdrop-filter: blur(var(--gl-glass-blur));
+  -webkit-backdrop-filter: blur(var(--gl-glass-blur));
+  border-top: 1px solid var(--gl-glass-border);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color);
+  transition: color 0.15s ease;
+}
+
 .footer__link-item:hover {
   color: var(--ifm-color-primary) !important;
   text-decoration: none;
@@ -208,6 +290,10 @@ main .theme-doc-markdown {
 
 .footer__title {
   color: var(--ifm-footer-title-color, inherit);
+}
+
+.footer__copyright {
+  color: var(--gl-text-muted);
 }
 
 /* Admonitions and code blocks: rounder, matching the app's soft corners. */

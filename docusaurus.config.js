@@ -11,7 +11,7 @@ const config = {
     v4: true,
   },
 
-  url: 'https://docs.grainlify.0xo.in',
+  url: 'https://docs.grainlify.com',
   baseUrl: '/',
 
   organizationName: 'Grainlify',
@@ -53,11 +53,33 @@ const config = {
     ],
   ],
 
+  // Client-side search index built at compile time - no external service or
+  // API keys needed, so search works fully offline and on any host.
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        indexDocs: true,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         respectPrefersColorScheme: true,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
       },
       navbar: {
         title: 'Grainlify Docs',
@@ -73,7 +95,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://grainlify.0xo.in',
+            href: 'https://grainlify.com',
             label: 'Grainlify',
             position: 'right',
           },
@@ -85,7 +107,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -98,8 +119,17 @@ const config = {
           {
             title: 'Grainlify',
             items: [
-              {label: 'Platform', href: 'https://grainlify.0xo.in'},
-              {label: 'API', href: 'https://api.grainlify.0xo.in'},
+              {label: 'Platform', href: 'https://grainlify.com'},
+              {label: 'API', href: 'https://api.grainlify.com'},
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {label: 'GitHub', href: 'https://github.com/Grainlify'},
+              {label: 'Discord', href: 'https://discord.gg/TCDgKAdaj'},
+              {label: 'Telegram', href: 'https://t.me/+DQ_WdQSwynFiYjZl'},
+              {label: 'Twitter / X', href: 'https://x.com/Grainlify'},
             ],
           },
           {

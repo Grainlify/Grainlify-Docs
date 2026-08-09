@@ -14,7 +14,7 @@ community.
 
 There's one way in: **Sign in with GitHub.**
 
-1. Go to [grainlify.0xo.in](https://grainlify.0xo.in) and click **Sign In**.
+1. Go to [grainlify.com](https://grainlify.com) and click **Sign In**.
 2. Authorize Grainlify on GitHub. We only ever read your public profile and
    public activity to match you with projects — we never touch private
    repositories without you explicitly connecting one yourself.
