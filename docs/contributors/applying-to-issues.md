@@ -18,6 +18,13 @@ You can apply to as many open issues as you like. Keep in mind more than one
 person can apply to the same issue, and the maintainer chooses who gets it —
 a clear, specific message about how you'd tackle the problem goes a long way.
 
+:::tip Write a message that gets you picked
+Maintainers are comparing applications, often several on the same issue.
+"I'll take this" tells them nothing. A sentence or two on *how* you'd
+approach it, or a link to similar work you've done, is what actually stands
+out.
+:::
+
 Changed your mind, or found something better suited to you? You can
 **withdraw** your application at any time before you're assigned.
 
@@ -56,5 +63,4 @@ regular contributors.
   again.
 - Applying and getting merged build your reputation and rank on Grainlify.
   Earning **redeemable points** is a separate track — see
-  **[Referrals](./referrals.md)** and the
-  **[Social Follow Program](./social-follow.md)** for how that works.
+  **[How Rewards Work](../rewards.md)** for how the two fit together.

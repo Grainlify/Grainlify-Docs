@@ -5,7 +5,9 @@ sidebar_position: 7
 # Social Follow Program
 
 Follow Grainlify on GitHub, Telegram, and LinkedIn to earn a bonus **500
-points** — five times what a single referral is worth.
+points** — five times what a single referral is worth. Along with
+**[referrals](./referrals.md)**, this is the other way to earn redeemable
+points — see **[How Rewards Work](../rewards.md)** for the full picture.
 
 ## What you get
 
@@ -17,8 +19,8 @@ platforms and each follow has been confirmed.
 1. Go to **Settings → Rewards**.
 2. Follow Grainlify on each platform:
    - **GitHub** — follow [github.com/Grainlify](https://github.com/Grainlify)
-   - **Telegram** — follow our channel
-   - **LinkedIn** — follow our page
+   - **Telegram** — join [t.me/+DQ_WdQSwynFiYjZl](https://t.me/+DQ_WdQSwynFiYjZl)
+   - **LinkedIn** — follow [linkedin.com/company/grainlify](https://www.linkedin.com/company/grainlify)
 3. Take a screenshot showing you're following, and upload it for that
    platform in the Rewards tab.
 4. Repeat for all three. Each one shows a status: **pending review**,

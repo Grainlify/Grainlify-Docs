@@ -4,8 +4,9 @@ sidebar_position: 2
 
 # Finding a Project or Issue
 
-Grainlify gives you three ways to find something to work on: a curated
-**Discover** feed, a filterable **Browse** catalog, and global **Search**.
+Grainlify gives you four ways to find something to work on: a curated
+**Discover** feed, a filterable **Browse** catalog, a browsable **Ecosystems**
+directory, and global **Search**.
 
 ## Discover
 
@@ -36,6 +37,31 @@ Combine filters to zero in — for example, Rust + Backend + Good first issues.
 Each result shows stars, forks, contributor count, and how many open issues
 and pull requests the project currently has.
 
+## Ecosystems
+
+Open **Ecosystems** in the sidebar for a directory of every community on
+Grainlify — usually a foundation, chain, or umbrella organization — as cards
+showing its logo, description, website, and how many contributors and
+projects it has.
+
+Click into one to see:
+
+- **Overview** — stats (active contributors, projects, open issues and pull
+  requests), an About section, key focus areas, and technologies
+- **Projects** — every project in that ecosystem, filterable by language and
+  category
+
+This is a good starting point if you already care about a specific
+community or chain and want to see everything it has to offer in one place,
+rather than filtering Browse down to it.
+
+:::tip
+Don't see the ecosystem you're looking for? The list is curated by the
+Grainlify team — reach out through the
+**[Grainlify GitHub org](https://github.com/Grainlify)** and we'll look into
+adding it.
+:::
+
 ## Search
 
 Press **Cmd/Ctrl+K** anywhere in the dashboard (or open Search from the
@@ -57,6 +83,9 @@ Click into any project to see:
 - A recent activity feed of issues and pull requests
 
 From here, click any open issue to go to its **[apply page](./applying-to-issues.md)**.
+The project's owner also has their own public **org page** — click through
+from the project to see every project that owner maintains on Grainlify in
+one place.
 
 ## A note on labels
 

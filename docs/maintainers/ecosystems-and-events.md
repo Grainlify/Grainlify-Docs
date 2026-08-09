@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Ecosystems & Open Source Week
@@ -8,14 +8,15 @@ sidebar_position: 4
 
 An ecosystem groups related projects together — usually a foundation,
 chain, or community umbrella — so contributors can browse and filter by the
-community they're most interested in. Every project on Grainlify belongs to
-one ecosystem, chosen during setup.
+community they're most interested in, including from its own
+**[dedicated directory](../contributors/finding-work.md#ecosystems)**. Every
+project on Grainlify belongs to one ecosystem, chosen during setup.
 
 The list of ecosystems is curated by the Grainlify team rather than
 self-service, so if the right one isn't available yet when you're setting up
 your project, reach out to us — through the
-**[Grainlify GitHub org](https://github.com/Grainlify)** or our Telegram
-channel — and we'll get it added.
+**[Grainlify GitHub org](https://github.com/Grainlify)** or our
+**[Telegram](https://t.me/+DQ_WdQSwynFiYjZl)** — and we'll get it added.
 
 ## Open Source Week
 

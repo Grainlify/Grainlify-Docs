@@ -28,6 +28,9 @@ const config = {
   // with MDX in mind for.
   markdown: {
     format: 'md',
+    mdx1Compat: {
+      admonitions: true,
+    },
   },
 
   i18n: {

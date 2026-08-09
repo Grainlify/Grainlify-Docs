@@ -19,7 +19,9 @@ confirm real people are behind the accounts earning and receiving rewards.
 
 ## How to verify
 
-1. Go to **Settings → Billing Profiles**.
+1. Go to **Settings → Billing Profiles** and create a profile — today this
+   is **Individual** only (self-employed and organization profiles are
+   coming soon).
 2. Click **Verify KYC**.
 3. Complete the verification steps in the window that opens — you'll need a
    photo ID and a quick face match.
@@ -30,7 +32,15 @@ Your status will show as **pending**, **in review**, **verified**, or, if
 something didn't go through, **rejected** — in which case you can simply
 try again.
 
+:::note Verification is instant to start, not instant to finish
+Opening the verification window and submitting your ID takes a couple of
+minutes. The status update back on Grainlify (pending → verified) can lag
+slightly behind — if it's not showing as verified right after you finish,
+give it a few minutes before trying again.
+:::
+
 ## Your data
 
-Identity verification is handled by our verification partner; Grainlify
-only stores your resulting status, not your documents.
+Identity verification is handled by **Didit**, Grainlify's verification
+partner; Grainlify stores your resulting status and the identity details
+needed for payouts, not your raw ID photos.

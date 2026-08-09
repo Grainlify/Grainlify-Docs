@@ -7,6 +7,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Chrome gives ::view-transition-old/new(root) their own default 0.25s
+   cross-fade. Left alone, that fade runs underneath the circle clip-path
+   src/theme/ColorModeToggle drives over 600ms: the old snapshot fades to
+   invisible well before the circle finishes growing, so the area outside
+   the circle briefly shows nothing instead of the old theme. Disabling the
+   default animation and stacking the new snapshot on top makes the circle
+   the only thing moving - old theme underneath, new theme revealed inside
+   the growing circle, full opacity throughout. Matches
+   Grainlify-Frontend's src/styles/theme.css exactly. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
 :root {
   /* Gold accent (--primary in the app), same value in both themes. */
   --ifm-color-primary: #c9983a;
@@ -110,11 +133,21 @@
 }
 
 /* Fixed warm gradient body background, same three-stop diagonal used across
-   the app's full-screen pages (SignInPage, Dashboard, etc.). */
+   the app's full-screen pages (SignInPage, Dashboard, etc.). Without
+   overscroll-behavior, rubber-banding past any edge flashes the browser's
+   default white/black canvas instead of this gradient. */
 html,
 body {
   background: var(--gl-bg-gradient);
   background-attachment: fixed;
+  overscroll-behavior: none;
+}
+
+/* Same rubber-band containment for the sidebar/content scroll regions. */
+.theme-doc-sidebar-container,
+.menu,
+main .theme-doc-markdown {
+  overscroll-behavior: contain;
 }
 
 /* Navbar: fully opaque (no glass/blur), so it stays solid over scrolled

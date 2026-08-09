@@ -10,6 +10,11 @@ keeps track of what you've contributed so it counts for something — a public
 track record, a spot on the leaderboard, and rewards for helping grow the
 community.
 
+:::tip Two minutes to your first contribution
+Sign in, open **Discover**, click into any issue, hit **Apply**. That's the
+whole loop — everything else on this page is context for once you're in.
+:::
+
 ## Create your account
 
 There's one way in: **Sign in with GitHub.**
@@ -24,12 +29,19 @@ There's one way in: **Sign in with GitHub.**
 There's no separate signup form and nothing to fill in up front — your first
 sign-in *is* your account.
 
+:::note Eligibility
+You'll need a GitHub account and to be 18 or older — this matters mainly
+because payouts involve real money (USDC), and Grainlify has to be able to
+verify who it's paying. See Grainlify's Terms & Conditions in-app for the
+full details.
+:::
+
 ## The basic loop
 
 Once you're signed in, using Grainlify comes down to four things:
 
 1. **[Find a project or issue](./finding-work.md)** you want to work on, using
-   Discover or Browse.
+   Discover, Browse, Ecosystems, or Search.
 2. **[Apply to an issue](./applying-to-issues.md)** and, once a maintainer
    assigns it to you, do the work as a normal GitHub pull request.
 3. Every issue and pull request you complete adds to your public contribution
@@ -38,6 +50,10 @@ Once you're signed in, using Grainlify comes down to four things:
 4. Separately, **[invite people](./referrals.md)** and
    **[follow us on social media](./social-follow.md)** to earn points you can
    **[redeem for USDC](./rewards-and-redemptions.md)**.
+
+Steps 3 and 4 are genuinely separate systems — contributing builds your
+*rank*, referrals and social-follow build your *redeemable points balance*.
+**[How Rewards Work](../rewards.md)** lays out exactly how they fit together.
 
 ## Your profile
 

@@ -5,12 +5,14 @@ sidebar_position: 6
 # Referral Program
 
 Invite people to Grainlify and earn points for every friend who joins and
-verifies their account.
+verifies their account. This is one of two ways to earn redeemable points —
+see **[How Rewards Work](../rewards.md)** for the full picture.
 
 ## What you get
 
 **100 points** for every successful referral, credited straight to your
-account balance. Points can be [redeemed for USDC](./rewards-and-redemptions.md).
+account balance, with no cap on how many people you refer. Points can be
+[redeemed for USDC](./rewards-and-redemptions.md).
 
 ## How it works
 

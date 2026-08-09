@@ -6,7 +6,10 @@ sidebar_position: 8
 
 Points you've earned from **[referrals](./referrals.md)** and the
 **[Social Follow Program](./social-follow.md)** aren't just a number — you
-can redeem them for real USDC, sent straight to your own wallet.
+can redeem them for real USDC, sent straight to your own wallet. This page
+covers the redemption mechanics specifically; see
+**[How Rewards Work](../rewards.md)** for how points relate to your rank and
+the rest of the rewards system.
 
 ## How to earn points
 

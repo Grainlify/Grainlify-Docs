@@ -49,3 +49,9 @@ been claimed, without leaving the dashboard.
 Every applicant's message links back to their **[profile](../contributors/profile.md)**,
 which shows their contribution history and rank — a quick way to gauge
 experience before deciding who to assign.
+
+:::tip
+Once you've assigned someone, their pull request shows up in
+**[Reviewing Pull Requests](./reviewing-pull-requests.md)** as soon as they
+open it — that's the next place to check in on progress.
+:::
