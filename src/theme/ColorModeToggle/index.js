@@ -1,8 +1,8 @@
 /**
  * Swizzled from @docusaurus/theme-classic (eject) to replace Infima's instant
- * light/dark flip with the same circle-reveal View Transition animation used
- * by Grainlify-Frontend's useThemeToggleAnimation hook, so the toggle feels
- * like the same product across the app and the docs site.
+ * light/dark flip with the same diagonal-wipe, golden-glow View Transition
+ * animation used by Grainlify-Frontend's useThemeToggleAnimation hook, so
+ * the toggle feels like the same product across the app and the docs site.
  */
 import React, {useRef} from 'react';
 import clsx from 'clsx';
@@ -89,6 +89,13 @@ function CurrentColorModeIcon() {
     </>
   );
 }
+// Brand gold, matches --ifm-color-primary / --gl-glass-border in custom.css.
+const GLOW_COLOR = '201, 152, 58';
+
+// easeOutExpo (easings.net) - the "expo-out" curve a diagonal wipe like this
+// is usually paired with: fast start, long soft settle.
+const EASE_OUT_EXPO = 'cubic-bezier(0.19, 1, 0.22, 1)';
+
 function ColorModeToggle({
   className,
   buttonClassName,
@@ -99,6 +106,14 @@ function ColorModeToggle({
   const isBrowser = useIsBrowser();
   const buttonRef = useRef(null);
 
+  // Diagonal-wipe reveal: a triangle anchored at the top-left corner, its
+  // two legs growing well past the viewport so the hypotenuse sweeps across
+  // the screen as a straight diagonal edge before the triangle swallows it
+  // whole. The gold glow is a `filter: drop-shadow()` on the pseudo-element
+  // itself, not a separate DOM overlay - `::view-transition-*`
+  // pseudo-elements render in the browser's top layer, above *any* normal
+  // DOM node regardless of z-index, so a bare `<div>` glow would be
+  // invisible for the whole transition.
   const handleClick = () => {
     const next = getNextColorMode(value, respectPrefersColorScheme);
     const supportsViewTransition =
@@ -112,14 +127,6 @@ function ColorModeToggle({
       return;
     }
 
-    const {top, left, width, height} = buttonRef.current.getBoundingClientRect();
-    const x = left + width / 2;
-    const y = top + height / 2;
-    const radius = Math.hypot(
-      Math.max(x, window.innerWidth - x),
-      Math.max(y, window.innerHeight - y),
-    );
-
     const transition = document.startViewTransition(() => {
       flushSync(() => {
         onChange(next);
@@ -130,13 +137,19 @@ function ColorModeToggle({
       document.documentElement.animate(
         {
           clipPath: [
-            `circle(0px at ${x}px ${y}px)`,
-            `circle(${radius}px at ${x}px ${y}px)`,
+            'polygon(0% 0%, 0% 0%, 0% 0%)',
+            'polygon(0% 0%, 100% 0%, 0% 100%)',
+            'polygon(0% 0%, 200% 0%, 0% 200%)',
+          ],
+          filter: [
+            `drop-shadow(0 0 0px rgba(${GLOW_COLOR}, 0))`,
+            `drop-shadow(0 0 36px rgba(${GLOW_COLOR}, 0.55))`,
+            `drop-shadow(0 0 8px rgba(${GLOW_COLOR}, 0))`,
           ],
         },
         {
-          duration: 600,
-          easing: 'ease-in-out',
+          duration: 2000,
+          easing: EASE_OUT_EXPO,
           pseudoElement: '::view-transition-new(root)',
         },
       );
