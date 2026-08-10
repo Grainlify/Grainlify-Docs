@@ -7,6 +7,17 @@ sidebar_position: 2
 When a contributor wants to work on one of your issues, they apply right
 from Grainlify — here's where you review that and decide who gets the work.
 
+:::warning This decision isn't yours during a GrainHack
+On an issue that's part of a **[GrainHack event](./grainhack.md)**, a weighted
+draw picks the winner when the application window closes. Assigning someone
+yourself — here or directly on GitHub — is undone automatically, and repeated
+attempts can reduce your maintainer pool eligibility.
+
+Everything else on this page still applies: you can read the applications and
+the discussion, and post to the issue. See
+**[Running Issues in a GrainHack](./grainhack.md)**.
+:::
+
 ## Where to look
 
 Open **Maintainers → Issues**. You'll see every issue across your connected

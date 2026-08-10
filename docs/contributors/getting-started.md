@@ -55,6 +55,11 @@ Steps 3 and 4 are genuinely separate systems — contributing builds your
 *rank*, referrals and social-follow build your *redeemable points balance*.
 **[How Rewards Work](../rewards.md)** lays out exactly how they fit together.
 
+When a **[GrainHack event](./grainhack.md)** is running, step 2 changes: issues
+in the event are assigned by a draw rather than by a maintainer, and the work
+earns a share of a prize pool. It's the one route on Grainlify where writing
+code is paid directly.
+
 ## Your profile
 
 Everything you do is reflected on your **[profile page](./profile.md)** —

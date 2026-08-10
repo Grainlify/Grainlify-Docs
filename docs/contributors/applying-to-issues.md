@@ -18,6 +18,17 @@ You can apply to as many open issues as you like. Keep in mind more than one
 person can apply to the same issue, and the maintainer chooses who gets it —
 a clear, specific message about how you'd tackle the problem goes a long way.
 
+:::info Issues in a GrainHack event work differently
+On an issue that's part of a **[GrainHack event](./grainhack.md)**, the
+maintainer doesn't choose. Applications stay open for a fixed window and then
+a weighted draw picks the winner, so applying first doesn't help. You can also
+only hold five open applications at a time there.
+
+If you're applying to a GrainHack issue, read
+**[GrainHack Events](./grainhack.md)** first — the assignment rules, the
+grading and the payment all differ from this page.
+:::
+
 :::tip Write a message that gets you picked
 Maintainers are comparing applications, often several on the same issue.
 "I'll take this" tells them nothing. A sentence or two on *how* you'd
@@ -36,6 +47,10 @@ The project maintainer reviews applications and will either:
   you'll get a notification confirming it.
 - **Pass on it this time** — you'll get a notification, and you're free to
   apply to something else.
+
+On a **[GrainHack](./grainhack.md)** issue there's no maintainer decision to
+wait for: the application window closes and the draw runs on its own. You're
+notified if you win it. You aren't notified if you don't.
 
 If the issue gets closed or resolved another way before a decision is made,
 the Apply button will show the issue is no longer open.

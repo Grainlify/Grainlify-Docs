@@ -18,6 +18,15 @@ Merging a pull request raises your rank. It does **not** add a single point
 to your redeemable balance.
 :::
 
+:::note The one exception: GrainHack events
+During a **[GrainHack](./contributors/grainhack.md)**, merged work *is* paid —
+from that event's prize pool, not from points. It's a separate track again: a
+share of a fixed pool, worked out only once the event ends, with nothing to do
+with your points balance or your rank. See
+**[GrainHack Events](./contributors/grainhack.md)** for how the amount is
+decided.
+:::
+
 This page ties both systems together in one place. For the step-by-step
 mechanics of any one piece, follow the links into the dedicated guides.
 
@@ -103,9 +112,11 @@ ever opening a pull request.
 ## FAQ
 
 **Does merging a pull request pay me directly?**
-No — not today. It raises your rank (reputational) but doesn't add to your
-redeemable points balance. Points come only from referrals and social
-follows.
+Outside a GrainHack, no. It raises your rank (reputational) but doesn't add to
+your redeemable points balance — points come only from referrals and social
+follows. Inside a **[GrainHack event](./contributors/grainhack.md)**, merged
+work does earn a share of that event's prize pool, which is a third track
+separate from both rank and points.
 
 **Can my rank tier go down?**
 Yes — it's a live leaderboard position, so if other contributors pass you,

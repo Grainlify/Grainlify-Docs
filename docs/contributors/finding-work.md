@@ -94,3 +94,10 @@ comes directly from the labels the maintainer applied on GitHub — Grainlify
 doesn't add its own difficulty rating or estimate on top of it. When in
 doubt about how involved an issue is, the maintainer's labels and the issue
 description itself are the best signal.
+
+One label does change how the issue works: **`grainhack`**. It means the issue
+is part of a **[GrainHack event](./grainhack.md)** — the maintainer doesn't
+choose who gets it, a draw does, and the work earns a share of that event's
+prize pool. A GrainHack issue also carries a difficulty tier, which is the one
+case where Grainlify does add a rating of its own. Read
+**[GrainHack Events](./grainhack.md)** before applying to one.

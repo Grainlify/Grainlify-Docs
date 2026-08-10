@@ -20,11 +20,28 @@ As a contributor:
 | Your social-follow proof is approved and pays out |
 | A points redemption you requested is paid or rejected |
 
+During a **[GrainHack event](./grainhack.md)**, you'll also hear when:
+
+| You'll hear from us when... |
+|---|
+| You win the draw for a GrainHack issue |
+| A GrainHack issue is taken back off you for going quiet |
+| A GrainHack event is ending while you still hold an open issue |
+
+:::warning GrainHack results aren't notified yet
+You are **not** notified when you lose a draw, when an event's results are
+published, or when an appeal you filed is decided. The appeal window is only
+seven days and starts the moment results go out, so if you've submitted work to
+an event, check back rather than waiting to hear.
+:::
+
 If you also maintain projects on Grainlify, you'll additionally hear about:
 
 | You'll hear from us when... |
 |---|
 | A contributor applies to an issue on one of your projects |
+| Your project is accepted into a GrainHack event, or isn't |
+| Your labelling has gone past the per-event issue cap |
 
 ## In-app and email
 

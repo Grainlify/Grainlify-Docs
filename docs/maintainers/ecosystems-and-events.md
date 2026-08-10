@@ -32,3 +32,13 @@ activity across the platform tends to pick up.
 Events are organized by the Grainlify team. If you'd like your project
 featured or want to propose running one, reach out the same way as for
 ecosystems.
+
+## GrainHack
+
+A GrainHack is a different kind of event: time-boxed, with a prize pool for
+contributors and a separate one for maintainers. Unlike Open Source Week, it
+changes how your issues behave — a draw assigns them instead of you, and the
+work is graded and paid at the end.
+
+See **[Running Issues in a GrainHack](./grainhack.md)** for how to put issues
+in, how the maintainer pool is scored, and the holdback on your payout.
