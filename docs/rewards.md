@@ -78,6 +78,21 @@ three consequences — all of which are worth understanding before you start:
 | Verify your account before the first GrainHack opens | **0.1** |
 | Someone you referred verifies their account | **0.5**, lifetime cap of 10 |
 
+:::warning Merged-PR shares appear after appeals close, not when you merge
+Shares for a merged pull request are recorded once the GrainHack's **appeal
+window has closed** — not when the pull request merges, and not when your
+result is first published.
+
+That gap is deliberate. An appeal can change a result, so a share granted
+earlier could later have to be taken back — and a share you were shown and
+then lost is worse than one that arrived a few days later. Two things both
+have to be true before it counts: the pull request is merged, **and** the
+final result, after any appeals, accepted it.
+
+So if you merged something and see no shares for it yet, nothing is wrong.
+Check back after the appeal window closes.
+:::
+
 **Notice how lopsided that is — deliberately.** Verifying is worth a fortieth
 of a merged pull request. If signing up paid meaningfully, most of the pool
 would go to people who did nothing but create an account, and there'd be
@@ -112,8 +127,10 @@ its own: 1.5 × nothing is nothing. It rewards joining early *and* showing up.
 
 Following Grainlify on GitHub, Telegram and LinkedIn is an **eligibility
 requirement** worth zero shares — see
-**[Social Follow](./contributors/social-follow.md)**. It's checked when the
-pool is shared out, not when you were approved.
+**[Social Follow](./contributors/social-follow.md)**. Eligibility is confirmed
+when the pool is shared out: we check that your approved follow hasn't been
+revoked, which is not the same as a live re-check that you're still following.
+That page explains exactly what is and isn't verified.
 
 ## Putting it together
 
@@ -134,6 +151,10 @@ GrainHack it builds your rank only.
 At the end of the first GrainHack, when the pool is divided. Before then the
 number doesn't exist — which is why you won't see a dollar figure anywhere in
 the product, only your share count.
+
+**I merged a pull request and got no shares. Is that a bug?**
+No — merged-PR shares are recorded after the appeal window closes, because an
+appeal can still change a result until then. See the note above.
 
 **Can my rank tier go down?**
 Yes — it's a live leaderboard position. Shares, once earned, don't decrease.

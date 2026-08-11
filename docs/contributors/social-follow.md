@@ -34,10 +34,20 @@ anyway — and there's nothing left to farm, because there's nothing to collect.
 
 ## Keep following
 
-Eligibility is checked **when the pool is shared out**, not when you were
-approved. Following, being approved, and then unfollowing before the event
-ends means you aren't eligible — the requirement is being part of the
-community, not having briefly clicked a button.
+Eligibility is confirmed **when the pool is shared out**, not when your proof
+was approved.
+
+To be precise about what that check is, because the difference matters: we
+confirm that **your approved follow has not been revoked**. It is not a live
+re-check that you are still following on the day. Telegram and LinkedIn don't
+offer a way to verify a follow automatically, which is why proof is a
+screenshot reviewed by a person in the first place — and that same limitation
+applies at settlement.
+
+So the honest version is: unfollowing is not automatically detected. We're
+telling you that rather than implying a check we can't perform. The
+requirement is being part of the community, not having briefly clicked a
+button.
 
 ## What makes a good screenshot
 

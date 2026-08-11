@@ -30,6 +30,12 @@ earned 10 shares from people simply verifying, further referrals pay only when
 the person you brought actually ships code — which is the thing the pool
 exists to reward, and the thing nobody can fake cheaply.
 
+**What happens at the cap.** The cap is a ceiling on your total, not a filter
+on individual referrals — so the referral that crosses it still pays out the
+part that fits. If you're on 9.5 shares and another person verifies, you get
+0.5 rather than nothing, and the next one after that earns nothing from
+verifying. This is intended behaviour, not a rounding bug.
+
 **A share is not a fixed amount of money.** The pool is divided by every share
 everyone earned, so what a share is worth isn't known until the first GrainHack
 ends. [How Rewards Work](../rewards.md) explains the arithmetic.
