@@ -2,62 +2,50 @@
 sidebar_position: 9
 ---
 
-# Turning Points Into USDC
+# Point Redemption (Retired)
 
-Points you've earned from **[referrals](./referrals.md)** and the
-**[Social Follow Program](./social-follow.md)** aren't just a number — you
-can redeem them for real USDC, sent straight to your own wallet. This page
-covers the redemption mechanics specifically; see
-**[How Rewards Work](../rewards.md)** for how points relate to your rank and
-the rest of the rewards system.
+**The points system is retired. Points can no longer be earned or redeemed,
+and the Redeem page no longer accepts requests.**
 
-## How to earn points
+It's replaced by the **Founding Contributor Pool** — a single fixed amount of
+USDC, announced up front, shared out once at the end of the first GrainHack.
+See **[How Rewards Work](../rewards.md)** for how it works and what replaced
+what.
 
-- **100 points** for every friend you refer who joins and verifies their
-  identity — see **[Referrals](./referrals.md)**.
-- **500 points** once for following us on GitHub, Telegram, and LinkedIn —
-  see **[Social Follow Program](./social-follow.md)**.
+## What happened to my points?
 
-## Conversion rate
+Nothing was taken from anyone. When the change was made, **no points had ever
+been awarded to any account and no redemption had ever been paid**. There were
+no balances to migrate, which is why the system was retired outright rather
+than converted into something else.
 
-**100 points = $1 USDC.**
+If you were expecting a balance and don't see one, that's why — not an error.
 
-So a completed referral (100 points) is worth $1, and the social-follow
-bonus (500 points) is worth $5.
+## Why it changed
 
-## How to redeem
+The old system paid a fixed, known amount for actions that cost nothing and
+produced nothing: $1 per verified referral, $5 for following three social
+accounts, with no cap.
 
-Open **Redeem** in the sidebar — it's built like a currency swap: your
-points on one side, the USDC you'll receive on the other.
+Two problems with that, and the second is the one that mattered:
 
-1. Enter how many points you want to redeem (minimum **100 points**, i.e.
-   $1) — the USDC amount below updates live as you type. Use **Max** to
-   fill in your full balance.
-2. Enter the Stellar wallet address you want paid out to.
-3. Once everything looks right, hit **Redeem**. Your points are set aside
-   right away, so you'll always see an accurate balance even while a
-   request is being processed.
+- **It could be farmed.** A reward you can calculate in advance is a reward
+  someone can work out the return on. Getting money out of it needed no code,
+  no merged pull request, and no skill — just signups.
+- **The bill had no ceiling.** At roughly $6 per user, ten thousand users
+  meant $60,000 owed against no revenue and no cap. That money would have come
+  out of the same budget that now pays people who ship code.
 
-We recommend **[verifying your identity](./verifying-your-identity.md)**
-before redeeming, since it's what we expect to have on file before sending a
-payout.
+The replacement fixes both by design. The pool is a fixed amount, so the total
+can never grow past what was set aside. And nobody — including us — can work
+out what a share is worth until the event ends, because it depends on how much
+everyone else earned.
 
-## What happens next
+## Where rewards live now
 
-Every redemption request is reviewed by our team before payout:
-
-- **Paid** — the USDC has been sent to your wallet, and you'll get a
-  notification.
-- **Rejected** — for example, if the wallet address looks wrong. Your
-  points are refunded to your balance automatically, and you'll get a
-  notification explaining why so you can fix it and try again.
-
-You can check the status of every request you've made — pending, paid, or
-rejected — in your redemption history right below the Redeem page's swap
-card.
-
-## Tips for a smooth redemption
-
-- Double-check your wallet address before submitting — this is a Stellar
-  address (starts with `G`), not any other type of wallet.
-- Make sure the address is one you control and can receive USDC on.
+| | |
+|---|---|
+| **[How Rewards Work](../rewards.md)** | What a share is and how the pool is divided |
+| **[Referrals](./referrals.md)** | Shares for people you bring who verify and who ship |
+| **[Social Follow](./social-follow.md)** | Now an eligibility requirement, not a payment |
+| **[GrainHack Events](./grainhack.md)** | Merged pull requests — where most shares come from |

@@ -62,5 +62,5 @@ regular contributors.
   someone's assigned, it's off the table until a maintainer frees it up
   again.
 - Applying and getting merged build your reputation and rank on Grainlify.
-  Earning **redeemable points** is a separate track — see
-  **[How Rewards Work](../rewards.md)** for how the two fit together.
+  Earning **shares in the Founding Contributor Pool** is a separate track —
+  see **[How Rewards Work](../rewards.md)** for how the two fit together.

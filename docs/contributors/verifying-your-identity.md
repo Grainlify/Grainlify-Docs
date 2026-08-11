@@ -9,11 +9,13 @@ confirm real people are behind the accounts earning and receiving rewards.
 
 ## Why it matters
 
-- It's what triggers a **[referral](./referrals.md)** payout — when someone
-  you referred verifies their identity, that's the moment your 100 points
-  land.
-- It's expected before a **[points redemption](./rewards-and-redemptions.md)**
-  is paid out, since redemptions send real USDC to a real wallet.
+- It's what places you in a **[Founding Contributor Pool wave](../rewards.md)**
+  — the order people verify in decides who gets the Founding and Early Member
+  multipliers, and those waves close for good once full.
+- It's what makes a **[referral](./referrals.md)** count — when someone you
+  referred verifies, that's the moment your shares are recorded.
+- It's expected before any payout, since payouts send real USDC to a real
+  wallet.
 - A verified badge shows on your public profile as a trust signal to
   maintainers and other contributors.
 

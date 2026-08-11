@@ -47,13 +47,14 @@ Once you're signed in, using Grainlify comes down to four things:
 3. Every issue and pull request you complete adds to your public contribution
    history, which is what your **[rank and leaderboard](./ranks-and-leaderboard.md)**
    position are built from.
-4. Separately, **[invite people](./referrals.md)** and
-   **[follow us on social media](./social-follow.md)** to earn points you can
-   **[redeem for USDC](./rewards-and-redemptions.md)**.
+4. Verify your account, **[follow us on social media](./social-follow.md)**,
+   and **[invite people](./referrals.md)** — this is how you earn shares in
+   the **[Founding Contributor Pool](../rewards.md)**, alongside getting pull
+   requests merged.
 
-Steps 3 and 4 are genuinely separate systems — contributing builds your
-*rank*, referrals and social-follow build your *redeemable points balance*.
-**[How Rewards Work](../rewards.md)** lays out exactly how they fit together.
+Steps 3 and 4 are separate systems — contributing builds your *rank*, which is
+reputational, while shares in the Founding Contributor Pool are the money
+track. **[How Rewards Work](../rewards.md)** lays out how they fit together.
 
 ## Your profile
 

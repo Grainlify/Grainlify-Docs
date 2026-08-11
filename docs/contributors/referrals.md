@@ -4,15 +4,35 @@ sidebar_position: 7
 
 # Referral Program
 
-Invite people to Grainlify and earn points for every friend who joins and
-verifies their account. This is one of two ways to earn redeemable points —
-see **[How Rewards Work](../rewards.md)** for the full picture.
+Invite people to Grainlify and earn **shares in the Founding Contributor
+Pool** when they join and when they contribute.
 
-## What you get
+:::warning This changed
+Referrals used to pay 100 points per verified signup, redeemable for USDC at a
+fixed rate. **That system is retired and no longer pays anything.** It's
+replaced by shares in a single fixed pool — see
+**[How Rewards Work](../rewards.md)** for why, and what a share is.
 
-**100 points** for every successful referral, credited straight to your
-account balance, with no cap on how many people you refer. Points can be
-[redeemed for USDC](./rewards-and-redemptions.md).
+Nothing was taken from anyone: no points were ever awarded and no redemption
+was ever paid before the change.
+:::
+
+## What you earn
+
+| When | Shares |
+|---|---|
+| Someone you referred verifies their account | **0.5**, up to a lifetime cap of 10 |
+| Someone you referred gets a pull request merged during the first GrainHack | **5**, uncapped |
+
+The cap is the important part, so it's worth being direct about why it's
+there: signups are cheap to manufacture and produce nothing. Once you've
+earned 10 shares from people simply verifying, further referrals pay only when
+the person you brought actually ships code — which is the thing the pool
+exists to reward, and the thing nobody can fake cheaply.
+
+**A share is not a fixed amount of money.** The pool is divided by every share
+everyone earned, so what a share is worth isn't known until the first GrainHack
+ends. [How Rewards Work](../rewards.md) explains the arithmetic.
 
 ## How it works
 
@@ -24,22 +44,24 @@ account balance, with no cap on how many people you refer. Points can be
    tab as **pending**.
 4. Once they sign in with GitHub and complete
    **[identity verification](./verifying-your-identity.md)**, your referral
-   turns to **completed** and 100 points land in your balance automatically.
+   turns to **completed** and your shares are recorded.
+5. If they go on to get a pull request merged during the first GrainHack, you
+   earn shares for that too — automatically, with no cap.
 
 ## Why verification matters
 
-A referral only pays out once your friend actually verifies their identity —
-not just at signup. That's what keeps the program fair: it rewards you for
-bringing real, active members into the community, not just for someone
-briefly creating an account.
+A referral only counts once your friend actually verifies their identity — not
+just at signup. That's what keeps the programme fair: it rewards you for
+bringing real people into the community rather than for creating accounts.
 
 ## Track your referrals
 
-Your Referrals tab always shows:
+Your Referrals tab shows your code and link, how many people you've referred,
+how many are still pending, and how many have completed.
 
-- Your referral code and share link
-- How many people you've referred
-- How many are still pending verification
-- How many have completed, and how many points you've earned
-
-There's no limit on how many people you can refer.
+:::note Why you won't see a dollar figure
+Nowhere in Grainlify will you see what your shares are "worth" yet, and that's
+deliberate rather than an oversight. The value of a share depends on how many
+shares everyone else earns, so any number shown before the event ends would be
+a guess presented as a promise. You'll see your share count, which is a fact.
+:::

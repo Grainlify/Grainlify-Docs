@@ -4,17 +4,22 @@ sidebar_position: 8
 
 # Social Follow Program
 
-Follow Grainlify on GitHub, Telegram, and LinkedIn to earn a bonus **500
-points** — five times what a single referral is worth. Along with
-**[referrals](./referrals.md)**, this is the other way to earn redeemable
-points — see **[How Rewards Work](../rewards.md)** for the full picture.
+Following Grainlify on GitHub, Telegram, and LinkedIn is **required to receive
+anything from the Founding Contributor Pool**. It earns no shares by itself —
+it's a gate, not a payment.
 
-## What you get
+:::warning This changed
+Following used to pay a one-off 500 points, redeemable for USDC. **That no
+longer pays anything.** It's now an eligibility requirement instead.
 
-**500 points**, credited once, after you've followed us on all three
-platforms and each follow has been confirmed.
+This is a better deal than it sounds for everyone involved: paying real money
+for a free, reversible action that a bot can perform was never sustainable,
+and the cost of that would have come out of the same budget that now pays
+contributors. Making it a requirement means everyone who wants a share follows
+anyway — and there's nothing left to farm, because there's nothing to collect.
+:::
 
-## How to earn it
+## What you need to do
 
 1. Go to **Settings → Rewards**.
 2. Follow Grainlify on each platform:
@@ -25,8 +30,14 @@ platforms and each follow has been confirmed.
    platform in the Rewards tab.
 4. Repeat for all three. Each one shows a status: **pending review**,
    **approved**, or **rejected**.
-5. Once all three are approved, your 500 points are credited automatically
-   and you'll get a notification.
+5. Once all three are approved, you're eligible.
+
+## Keep following
+
+Eligibility is checked **when the pool is shared out**, not when you were
+approved. Following, being approved, and then unfollowing before the event
+ends means you aren't eligible — the requirement is being part of the
+community, not having briefly clicked a button.
 
 ## What makes a good screenshot
 
@@ -42,6 +53,6 @@ there's no limit on retries.
 ## Why proof instead of automatic checks
 
 GitHub and LinkedIn don't give us a way to automatically confirm a follow, so
-we review proof by hand for all three platforms — that way the process is
-the same and fair regardless of which platform you're completing. Reviews
-are typically quick, but during busy periods it may take a little longer.
+we review proof by hand for all three platforms — that way the process is the
+same regardless of platform. Reviews are typically quick, but during busy
+periods it may take a little longer.

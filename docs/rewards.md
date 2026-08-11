@@ -5,23 +5,28 @@ slug: /rewards
 
 # How Rewards Work
 
-Grainlify runs on two entirely separate reward systems, and mixing them up is
-the single most common source of confusion — so before anything else, here's
-the one rule to remember:
+Grainlify has two reward tracks, and they do different jobs:
 
-:::info Two systems, not one
-**Your rank** is earned by *contributing* (issues and pull requests) and is
-purely reputational — a badge, nothing more.
-**Your points balance** is earned by *growing the community* (referrals and
-social follows) and is the only thing you can redeem for real USDC.
-Merging a pull request raises your rank. It does **not** add a single point
-to your redeemable balance.
+:::info Two tracks
+**Your rank** is earned by contributing and is purely reputational — a badge
+and a leaderboard position, nothing more.
+**Shares in the Founding Contributor Pool** are the money track. Shares are
+earned overwhelmingly by getting pull requests merged, and the pool is shared
+out once, at the end of the first GrainHack.
 :::
 
-This page ties both systems together in one place. For the step-by-step
-mechanics of any one piece, follow the links into the dedicated guides.
+:::warning The points system is retired
+Grainlify used to pay a fixed rate — 100 points per verified referral, 500 for
+following our social accounts, redeemable at 100 points = $1 USDC. **That
+system no longer pays anything.**
 
-## System 1: Rank — earned by contributing
+No points were ever awarded to any account and no redemption was ever paid, so
+nothing was taken from anyone. See
+**[Point Redemption (Retired)](./contributors/rewards-and-redemptions.md)** for
+the detail.
+:::
+
+## Track 1: Rank — earned by contributing
 
 Every issue and pull request you complete on a project listed on Grainlify
 counts toward your **[leaderboard position](./contributors/ranks-and-leaderboard.md)**,
@@ -37,82 +42,106 @@ which places you into a tier:
 | 🥈 Silver | 101–500 |
 | 🥉 Bronze | 500+ |
 
-Your tier badge shows on your public profile and the leaderboard. It's a
-trust signal — maintainers weigh it when deciding who to assign an issue to,
-and other contributors see it as a track record. It is **not** convertible to
-USDC and doesn't unlock a cash payout on its own.
+Your tier badge shows on your public profile and the leaderboard. It's a trust
+signal, not currency — it doesn't convert to USDC on its own.
 
-## System 2: Points — earned by growing the community
+## Track 2: The Founding Contributor Pool
 
-Points are earned exactly two ways, and both are opt-in extras on top of
-contributing — you don't need to write a single line of code to earn them.
+One fixed amount of USDC, set aside and announced up front, divided once at
+the end of the first GrainHack.
 
-| Way to earn | Points | How |
-|---|---|---|
-| **[Refer a friend](./contributors/referrals.md)** | 100 per completed referral | Share your link; points land once they sign in with GitHub *and* complete identity verification — not just at signup |
-| **[Follow us on social](./contributors/social-follow.md)** | 500, once | Follow GitHub, Telegram, and LinkedIn, upload proof of each; points land once all three are approved |
+### How the maths works
 
-There's no cap on referrals — refer 50 people, earn 5,000 points. The
-social-follow bonus is a one-time 500-point unlock.
+```
+share value = the pool ÷ every share everyone earned
+your payout = your shares × share value
+```
 
-:::tip Where points come from is server-configured
-The 100-per-referral and 500-for-social-follow figures (and the redemption
-rate below) are read live from Grainlify's backend, not hardcoded into the
-app — so this page always reflects what you'll actually see in your account.
-:::
+That's the same arithmetic a GrainHack prize pool uses, and it has the same
+three consequences — all of which are worth understanding before you start:
 
-## Turning points into USDC
+- **The total can never grow.** However many people join, the pool is what was
+  announced. It cannot run up an open-ended bill.
+- **Nobody can know what a share is worth in advance — including us.** It
+  depends on everyone else's shares, and those don't exist yet.
+- **More participants means a smaller share each.** This is stated plainly
+  because it's the fact people would most reasonably feel misled by if they
+  learned it on payout day. It isn't a catch; it's what dividing a fixed pool
+  means.
 
-Once you have a points balance, **[redeem it for USDC](./contributors/rewards-and-redemptions.md)**
-from the **Redeem** page — built like a currency swap, points on one side,
-USDC on the other.
+### How shares are earned
 
-- **Conversion rate: 100 points = $1 USDC.**
-- **Minimum redemption: 100 points** (i.e. $1).
-- Payouts go to a **Stellar wallet address** you provide — USDC on Stellar,
-  not any other chain.
-- Every redemption is **reviewed by the Grainlify team before payout** —
-  it's not instant. Your points are set aside the moment you submit the
-  request, so your balance always reflects reality even mid-review.
-- A request resolves to either **Paid** (USDC sent, you're notified) or
-  **Rejected** (points refunded automatically, with a reason so you can fix
-  it and resubmit).
+| What you do | Shares |
+|---|---|
+| Get a pull request merged during the first GrainHack | **5** each, uncapped |
+| Someone you referred gets a pull request merged | **5** each, uncapped |
+| Verify your account before the first GrainHack opens | **0.1** |
+| Someone you referred verifies their account | **0.5**, lifetime cap of 10 |
 
-:::warning Verify your identity first
-Redemptions are expected to have a completed **[KYC identity check](./contributors/verifying-your-identity.md)**
-on file before payout — it's what lets Grainlify confirm a real person is
-receiving the USDC. Verify early so it's not the thing holding up your first
-redemption.
-:::
+**Notice how lopsided that is — deliberately.** Verifying is worth a fortieth
+of a merged pull request. If signing up paid meaningfully, most of the pool
+would go to people who did nothing but create an account, and there'd be
+little left for the people the programme exists to attract. Signing up gets
+you registered and gets you your wave multiplier. Merged code gets you paid.
 
-## Putting it together: a typical path
+### Waves — join early, earn more
 
-1. You contribute — apply to issues, get assigned, get pull requests merged.
-   Your **rank climbs**, but your **points balance doesn't move**.
-2. Separately, you refer a couple of friends and follow Grainlify's socials.
-   Your **points balance grows** — this is money, sitting in USDC waiting to
-   be claimed.
-3. You verify your identity once.
-4. You redeem points for USDC whenever you want, in $1 increments, straight
-   to your Stellar wallet.
+Everyone who verifies is placed in a wave, permanently, in the order they
+verify:
 
-Both tracks run at the same time and don't depend on each other — a
-brand-new account can earn its first $5 from social-follow alone, before
-ever opening a pull request.
+| Wave | Slots | Multiplier | Badge |
+|---|---|---|---|
+| **Founding** | first 100 | **×1.5** on all your shares | Permanent "Founding Member" |
+| **Wave 2** | next 400 | **×1.25** | Permanent "Early Member" |
+| **Open** | everyone after | ×1.0 | — |
+
+Two things to be clear about:
+
+- **Nobody is turned away.** Once the first 500 slots are gone you join the
+  open wave and can still earn fully from merged pull requests. Since verifying
+  is worth almost nothing, extra people barely dilute anyone.
+- **Each wave closes for good.** When the Founding wave fills, it's finished —
+  it won't be widened later. All three waves are announced up front so what
+  you're missing is clear before you miss it, and a wave that closes stays
+  closed.
+
+Your multiplier applies to your whole share total. It's also worth nothing on
+its own: 1.5 × nothing is nothing. It rewards joining early *and* showing up.
+
+### You must follow our social accounts
+
+Following Grainlify on GitHub, Telegram and LinkedIn is an **eligibility
+requirement** worth zero shares — see
+**[Social Follow](./contributors/social-follow.md)**. It's checked when the
+pool is shared out, not when you were approved.
+
+## Putting it together
+
+1. Verify your account. You get your wave and its permanent multiplier.
+2. Follow the social accounts, so you're eligible.
+3. **[Get pull requests merged](./contributors/grainhack.md)** during the
+   first GrainHack. This is where nearly all shares come from.
+4. Invite people who'll do the same — you earn from what they ship.
 
 ## FAQ
 
 **Does merging a pull request pay me directly?**
-No — not today. It raises your rank (reputational) but doesn't add to your
-redeemable points balance. Points come only from referrals and social
-follows.
+During a GrainHack, yes — merged work earns shares in the Founding Contributor
+Pool, and separately earns a share of that event's own prize pool. Outside a
+GrainHack it builds your rank only.
+
+**When do I find out what my shares are worth?**
+At the end of the first GrainHack, when the pool is divided. Before then the
+number doesn't exist — which is why you won't see a dollar figure anywhere in
+the product, only your share count.
 
 **Can my rank tier go down?**
-Yes — it's a live leaderboard position, so if other contributors pass you,
-your tier can change. Points, once earned, don't expire or decrease on
-their own.
+Yes — it's a live leaderboard position. Shares, once earned, don't decrease.
 
-**Is there a limit to how much I can earn?**
-No cap on referrals or on how much you redeem over time — the only limits
-are the one-time 500-point social-follow bonus and the 100-point minimum
-per redemption.
+**Is there a cap on what I can earn?**
+Merged-PR shares are uncapped, for you and for people you refer. Only the
+verify-only referral shares are capped, at 10.
+
+**What if I miss the Founding wave?**
+You join the next one. The multiplier is lower, but merged pull requests are
+where the money is, and those are worth the same to everybody.

@@ -229,6 +229,7 @@ rather than waiting to hear.
 - Your GrainHack work counts toward your normal
   **[rank and leaderboard position](./ranks-and-leaderboard.md)** like any other
   contribution.
-- A GrainHack prize pool is separate from
-  **[redeemable points](../rewards.md)**. Points come from referrals and social
-  follows; they aren't affected by anything on this page.
+- A GrainHack prize pool is separate from the
+  **[Founding Contributor Pool](../rewards.md)**, and a merged pull request
+  here earns from both: a share of this event's prize pool, and shares in the
+  founding pool. They're divided separately and settle separately.
