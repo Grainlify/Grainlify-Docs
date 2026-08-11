@@ -5,7 +5,8 @@ sidebar_position: 9
 # Point Redemption (Retired)
 
 **The points system is retired. Points can no longer be earned or redeemed,
-and the Redeem page no longer accepts requests.**
+and the Redeem page has been removed** — its old link now takes you to your
+rewards settings.
 
 It's replaced by the **Founding Contributor Pool** — a single fixed amount of
 USDC, announced up front, shared out once at the end of the first GrainHack.
@@ -47,5 +48,5 @@ everyone else earned.
 |---|---|
 | **[How Rewards Work](../rewards.md)** | What a share is and how the pool is divided |
 | **[Referrals](./referrals.md)** | Shares for people you bring who verify and who ship |
-| **[Social Follow](./social-follow.md)** | Now an eligibility requirement, not a payment |
+| **[Social Follow](./social-follow.md)** | Now an eligibility requirement on LinkedIn and X, not a payment |
 | **[GrainHack Events](./grainhack.md)** | Merged pull requests — where most shares come from |

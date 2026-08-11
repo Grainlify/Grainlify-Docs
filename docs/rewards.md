@@ -125,12 +125,15 @@ its own: 1.5 × nothing is nothing. It rewards joining early *and* showing up.
 
 ### You must follow our social accounts
 
-Following Grainlify on GitHub, Telegram and LinkedIn is an **eligibility
-requirement** worth zero shares — see
-**[Social Follow](./contributors/social-follow.md)**. Eligibility is confirmed
-when the pool is shared out: we check that your approved follow hasn't been
-revoked, which is not the same as a live re-check that you're still following.
-That page explains exactly what is and isn't verified.
+Following Grainlify on **LinkedIn and X** is an **eligibility requirement**
+worth zero shares — see **[Social Follow](./contributors/social-follow.md)**.
+Both screenshots are submitted together and approved as one.
+
+An approval can also be **withdrawn** later, in which case you'll see that it
+happened and why. Eligibility is confirmed when the pool is shared out: the
+check confirms your approved follow hasn't been revoked, which is not the same
+as a live re-check that you're still following. That page explains exactly what
+is and isn't verified.
 
 ## Putting it together
 
