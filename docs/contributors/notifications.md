@@ -16,9 +16,8 @@ As a contributor:
 | A maintainer assigns you to an issue you applied for |
 | Your application to an issue isn't accepted |
 | A pull request you opened gets merged |
-| A referral you made is completed and pays out |
-| Your social-follow proof is approved and pays out |
-| A points redemption you requested is paid or rejected |
+| A referral you made is completed |
+| Your social-follow proof is approved or rejected |
 
 If you also maintain projects on Grainlify, you'll additionally hear about:
 

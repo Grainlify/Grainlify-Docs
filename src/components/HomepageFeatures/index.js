@@ -9,8 +9,9 @@ const FeatureList = [
     to: '/docs/contributors',
     description: (
       <>
-        Find issues, apply, and get your work merged. Earn points through
-        referrals and social follows, and redeem them for real USDC.
+        Find issues, apply, and get your work merged. Merged pull requests
+        earn shares in the Founding Contributor Pool, divided once at the end
+        of the first GrainHack.
       </>
     ),
   },

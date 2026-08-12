@@ -122,7 +122,7 @@ convention.
 
 :::note Rank is reputational, not redeemable
 Your tier is a badge, not a balance — it doesn't convert to USDC on its own.
-If you're looking for the path to an actual payout, that's your **points**
-balance, earned separately through referrals and social follows. See
-**[How Rewards Work](../rewards.md)** for how the two connect.
+The money track is **shares in the Founding Contributor Pool**, earned
+overwhelmingly by getting pull requests merged. See
+**[How Rewards Work](../rewards.md)** for how the two tracks differ.
 :::
