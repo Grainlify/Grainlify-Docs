@@ -58,10 +58,13 @@ Steps 3 and 4 are separate systems — contributing builds your *rank*, which is
 reputational, while shares in the Founding Contributor Pool are the money
 track. **[How Rewards Work](../rewards.md)** lays out how they fit together.
 
-**The pool is not yet funded and no payout has been made.** Shares you earn now
-are recorded and will count; the rewards pages describe how the pool is
-designed to work rather than something that has already happened. See
-**[Payout path](../reference/payout-path.md)** for what currently runs.
+**The pool is not yet funded and no payout has been made.** Shares *are*
+recorded as you earn them, but a share only pays if you are eligible when the
+pool is distributed — which needs an
+**[approved follow proof](./social-follow.md)** that has not been withdrawn.
+The rewards pages describe how distribution is designed to work, not something
+that has happened. See **[Payout path](../reference/payout-path.md)** for what
+currently runs.
 
 ## Your profile
 
