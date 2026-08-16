@@ -20,6 +20,7 @@ As a contributor:
 | A pull request you opened gets merged |
 | A referral you made is completed |
 | Your social-follow proof is approved or rejected |
+| Your social-follow approval is withdrawn, and why |
 
 If you also maintain projects on Grainlify, you'll additionally hear about:
 

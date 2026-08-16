@@ -27,11 +27,17 @@ const FeatureList = [
   },
   {
     title: 'Technical Reference',
-    to: '/docs/reference/program-escrow/circuit-breaker',
+    // Was /docs/reference/program-escrow/circuit-breaker, describing "the
+    // Soroban contract suite". That page is now in the archive: it documents
+    // contracts that have no implementation, and the homepage was sending
+    // every first-time reader - including anyone evaluating the project -
+    // straight into them.
+    to: '/docs/reference/payout-path',
     description: (
       <>
-        Building on Grainlify itself? Smart contract internals, event
-        schemas, and architecture notes for the Soroban contract suite.
+        Building on Grainlify itself? How support requests, follow review and
+        identity verification actually work, and an honest account of what
+        the payout path does and does not yet do.
       </>
     ),
   },
