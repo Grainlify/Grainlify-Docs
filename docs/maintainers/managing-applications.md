@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Managing Applications
 
+*Last updated: 16 August 2026*
+
 When a contributor wants to work on one of your issues, they apply right
 from Grainlify — here's where you review that and decide who gets the work.
 

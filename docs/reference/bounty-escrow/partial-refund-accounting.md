@@ -1,5 +1,7 @@
 # Partial Refund Accounting — `bounty_escrow` EscrowData
 
+*Last updated: 16 August 2026*
+
 > Issue #1294 — Balance invariant verification for `EscrowStatus::PartiallyRefunded`
 
 ## Overview

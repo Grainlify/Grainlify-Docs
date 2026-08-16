@@ -1,5 +1,7 @@
 # Delegate Authorization — Program Escrow RBAC
 
+*Last updated: 16 August 2026*
+
 This document describes the delegate permission model for the `program-escrow` contract,
 including normal delegation, permission bitmasks, and the emergency revocation fast-path.
 

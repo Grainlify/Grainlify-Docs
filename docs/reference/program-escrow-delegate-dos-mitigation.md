@@ -1,5 +1,7 @@
 # Delegate DoS Mitigation in Program Escrow
 
+*Last updated: 16 August 2026*
+
 ## Vulnerability Description
 Prior to this mitigation, the `update_program_metadata_by` function in the `program-escrow` contract allowed delegates with the `DELEGATE_PERMISSION_UPDATE_META` permission to repeatedly rewrite `ProgramMetadata.custom_fields` without any restrictions. A malicious or compromised delegate could exploit this to spam metadata updates with excessively large payloads, inflating storage costs and TTL-extension fees for the program owner. This served as a griefing vector since `DELEGATE_PERMISSION_UPDATE_META` is intended as a low-privilege role without the ability to release or refund funds.
 

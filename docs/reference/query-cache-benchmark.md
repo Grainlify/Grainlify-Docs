@@ -1,5 +1,7 @@
 # Query Cache Benchmark: Before / After Instruction Counts
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 This document benchmarks the per-invocation `QueryCache` introduced in

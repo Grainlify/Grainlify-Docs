@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # Running Issues in a GrainHack
 
+*Last updated: 16 August 2026*
+
 A GrainHack is a time-boxed event with a prize pool. Your project puts issues
 into it, contributors work on them, and there's a **second, separate pool for
 maintainers** — paid on how well your repository hosted the work, not on how

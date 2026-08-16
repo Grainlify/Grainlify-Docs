@@ -1,5 +1,7 @@
 # Grainlify Contracts — Event Schema & Indexer Guide
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 All events across `bounty-escrow`, `program-escrow`, and `grainlify-core`

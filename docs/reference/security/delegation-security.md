@@ -1,5 +1,7 @@
 # Delegation Security — Program Escrow
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 `ProgramEscrowContract` supports a single-level delegate per program. A delegate

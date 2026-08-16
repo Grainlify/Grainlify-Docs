@@ -5,6 +5,8 @@ slug: /rewards
 
 # How Rewards Work
 
+*Last updated: 16 August 2026*
+
 Grainlify has two reward tracks, and they do different jobs:
 
 :::info Two tracks

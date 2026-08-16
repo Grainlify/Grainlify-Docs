@@ -4,6 +4,8 @@ sidebar_position: 9
 
 # Point Redemption (Retired)
 
+*Last updated: 16 August 2026*
+
 **The points system is retired. Points can no longer be earned or redeemed,
 and the Redeem page has been removed** — its old link now takes you to your
 rewards settings.

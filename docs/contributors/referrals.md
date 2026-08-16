@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # Referral Program
 
+*Last updated: 16 August 2026*
+
 Invite people to Grainlify and earn **shares in the Founding Contributor
 Pool** when they join and when they contribute.
 
@@ -36,6 +38,16 @@ part that fits. If you're on 9.5 shares and another person verifies, you get
 0.5 rather than nothing, and the next one after that earns nothing from
 verifying. This is intended behaviour, not a rounding bug.
 
+:::warning Shares are worth nothing without an approved follow
+Referral shares are recorded whether or not you are eligible — but the pool is
+only shared out among **eligible** members, and eligibility requires an
+**approved social-follow submission** that has not been revoked. An ineligible
+member computes to zero and is excluded from the divisor.
+
+So earning referral shares and never submitting follow proof means those shares
+pay nothing. See [Social Follow](./social-follow.md).
+:::
+
 **A share is not a fixed amount of money.** The pool is divided by every share
 everyone earned, so what a share is worth isn't known until the first GrainHack
 ends. [How Rewards Work](../rewards.md) explains the arithmetic.
@@ -59,6 +71,26 @@ ends. [How Rewards Work](../rewards.md) explains the arithmetic.
 A referral only counts once your friend actually verifies their identity — not
 just at signup. That's what keeps the programme fair: it rewards you for
 bringing real people into the community rather than for creating accounts.
+
+:::note Verification completes a referral. A merged PR earns more.
+These are two separate things and it's easy to run them together:
+
+- **Verification is the only thing that moves a referral from pending to
+  completed.** Nothing else is required — no merged pull request, no minimum
+  number of contributions, no time limit.
+- **A merged PR is an additional reward**, not a second condition. If someone
+  you referred ships merged work during the first GrainHack you earn 5 more
+  shares, whether or not anything else has happened.
+
+So a completed referral with no merged PR is normal and correct.
+:::
+
+:::note "Points awarded: 0" is expected
+Completed referrals record `0` points. The points programme is frozen — see
+the note at the top of this page — so nothing awards points any more. The
+referral is still complete and still counts toward the Founding Contributor
+Pool; the zero is the retired system, not a failed referral.
+:::
 
 ## Track your referrals
 

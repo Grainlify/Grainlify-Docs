@@ -1,5 +1,7 @@
 # Program Escrow token-decimals safety
 
+*Last updated: 16 August 2026*
+
 Program Escrow always transfers and stores token amounts as raw `i128` units.
 Decimals are display metadata: indexers and user interfaces divide a raw amount
 by `10^decimals` to produce a human-readable amount.

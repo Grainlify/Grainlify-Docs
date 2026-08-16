@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Applying to Issues
 
+*Last updated: 16 August 2026*
+
 Once you've found an issue you want to work on, here's how to actually get
 it assigned to you and get your work merged.
 

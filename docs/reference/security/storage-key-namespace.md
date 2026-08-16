@@ -1,5 +1,7 @@
 # Storage Key Namespace Isolation Audit
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 This document is the security audit for storage key namespace collisions between

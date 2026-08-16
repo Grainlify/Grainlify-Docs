@@ -1,5 +1,7 @@
 # Capability Token Replay-Attack Prevention
 
+*Last updated: 16 August 2026*
+
 > Closes #1379
 
 ## Overview

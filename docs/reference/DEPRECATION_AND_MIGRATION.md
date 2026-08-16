@@ -1,5 +1,7 @@
 # Contract Deprecation and Migration (Kill Switch)
 
+*Last updated: 16 August 2026*
+
 This document describes the controlled kill-switch mechanism used to deprecate older contract versions while allowing existing escrows to complete or migrate, without locking funds.
 
 ## Overview

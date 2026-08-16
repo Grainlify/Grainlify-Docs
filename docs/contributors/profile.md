@@ -4,6 +4,8 @@ sidebar_position: 11
 
 # Your Profile
 
+*Last updated: 16 August 2026*
+
 Your profile is your public track record on Grainlify — anyone can view it,
 whether they're a maintainer deciding who to assign an issue to or another
 contributor checking out the leaderboard.

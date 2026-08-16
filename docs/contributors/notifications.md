@@ -4,6 +4,8 @@ sidebar_position: 10
 
 # Notifications
 
+*Last updated: 16 August 2026*
+
 Stay on top of everything happening with your applications, pull requests,
 and rewards — without checking the dashboard constantly.
 

@@ -1,5 +1,7 @@
 # Production Monitoring Metrics Coverage & Naming Specification
 
+*Last updated: 16 August 2026*
+
 ## Executive Summary
 
 This document specifies the metrics naming standards, label sanitization requirements, dashboard visibility mapping, and expected regression surface for application monitoring and observability in `src/metrics/businessMetrics.ts`.

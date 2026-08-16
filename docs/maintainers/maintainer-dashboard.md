@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Your Maintainer Dashboard
 
+*Last updated: 16 August 2026*
+
 Open **Maintainers → Dashboard** for a single-screen overview of everything
 happening across the projects you maintain — built specifically from your
 own projects' issues and pull requests, not platform-wide numbers.

@@ -1,5 +1,22 @@
 # Shared idempotency-key namespace
 
+*Last updated: 16 August 2026*
+
+:::danger Documents a contract that does not exist
+The only Soroban contract in this project is `grainhack-escrow`
+(`initialise`, `fund`, `publish_root`, `claim`, `is_claimed`, `sweep`), and it
+has never been deployed. The program-escrow and bounty-escrow surfaces this
+page describes — `publish_program`, `lock_program_funds`, `single_payout`,
+`batch_payout`, `create_bounty` and the rest — have **no implementation in any
+repository**, verified 16 August 2026.
+
+This page is kept as a design record. Do not read it as a description of
+working software, and do not implement against it without checking what the
+contract actually exposes. See [Payout path — what exists
+today](./payout-path.md).
+:::
+
+
 The `program-escrow` contract supports two idempotent payout entrypoints:
 
 - [`single_payout_idempotent`]

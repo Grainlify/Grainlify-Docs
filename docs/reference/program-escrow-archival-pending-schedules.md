@@ -1,5 +1,7 @@
 # `archive_program` — Interaction with Pending Release Schedules
 
+*Last updated: 16 August 2026*
+
 **Issue:** [#1493](https://github.com/Jagadeeshftw/grainlify/issues/1493)  
 **Contract:** `contracts/program-escrow/src/lib.rs`  
 **Error code:** `ContractError::CannotArchiveWithPendingOps = 106`

@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # Verifying Your Identity
 
+*Last updated: 16 August 2026*
+
 Grainlify uses a quick identity check (KYC — "know your customer") to
 confirm real people are behind the accounts earning and receiving rewards.
 

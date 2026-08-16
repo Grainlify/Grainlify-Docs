@@ -1,5 +1,7 @@
 # Program Delegate and Controller Rotation Interaction
 
+*Last updated: 16 August 2026*
+
 This document explains the technical implementation, security implications, and intended behavior regarding the interaction between program delegates and controller (admin) rotations in the `ProgramEscrow` contract.
 
 ## Core Concepts

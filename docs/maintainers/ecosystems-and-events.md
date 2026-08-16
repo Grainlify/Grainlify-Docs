@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # Ecosystems & Open Source Week
 
+*Last updated: 16 August 2026*
+
 ## Ecosystems
 
 An ecosystem groups related projects together — usually a foundation,

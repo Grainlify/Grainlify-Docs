@@ -1,5 +1,7 @@
 # Database Observability
 
+*Last updated: 16 August 2026*
+
 ## Slow Query Logging
 
 The backend instruments every PostgreSQL query via a `pgx.QueryTracer` attached to the connection pool. When a query's wall-clock duration exceeds the configured threshold a structured `WARN` log entry is emitted.

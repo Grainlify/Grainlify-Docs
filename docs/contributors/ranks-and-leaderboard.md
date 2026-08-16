@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Ranks and the Leaderboard
 
+*Last updated: 16 August 2026*
+
 Your merged work across projects on Grainlify feeds your standing in the
 community — shown as your rank and your position on the public leaderboard.
 

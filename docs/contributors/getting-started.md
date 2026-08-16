@@ -5,6 +5,8 @@ slug: /contributors
 
 # Getting Started as a Contributor
 
+*Last updated: 16 August 2026*
+
 Grainlify connects you with open-source projects that want contributors, and
 keeps track of what you've contributed so it counts for something — a public
 track record, a spot on the leaderboard, and rewards for helping grow the

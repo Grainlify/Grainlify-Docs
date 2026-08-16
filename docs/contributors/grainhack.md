@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # GrainHack Events
 
+*Last updated: 16 August 2026*
+
 A GrainHack is a time-boxed event that runs on top of Grainlify. Projects put
 issues into it, contributors work on those issues, and a prize pool is shared
 out at the end based on what was submitted.

@@ -1,5 +1,7 @@
 # Upgrade Governance & Timelock
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The `grainlify-core` contract implements a timelocked multisig upgrade governance

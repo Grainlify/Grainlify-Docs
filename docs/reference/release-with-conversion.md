@@ -1,5 +1,7 @@
 # Stellar Path-Payment Auto-Conversion at Release Time
 
+*Last updated: 16 August 2026*
+
 This document details the design, security assumptions, and usage of the atomic path-payment auto-conversion feature for foreign-currency payouts.
 
 ## Feature Overview

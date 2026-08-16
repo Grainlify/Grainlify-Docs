@@ -1,5 +1,7 @@
 # Business Metrics — Naming & Dashboard Coverage
 
+*Last updated: 16 August 2026*
+
 Issue #1628: Document monitoring metrics coverage  
 Regression surface version: **1**
 

@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Keeping Your Project in Sync
 
+*Last updated: 16 August 2026*
+
 ## Syncing is automatic
 
 Once your project is connected, Grainlify keeps its issues and pull requests
