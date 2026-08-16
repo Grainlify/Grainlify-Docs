@@ -9,14 +9,9 @@ sidebar_position: 7
 Invite people to Grainlify and earn **shares in the Founding Contributor
 Pool** when they join and when they contribute.
 
-:::warning This changed
-Referrals used to pay 100 points per verified signup, redeemable for USDC at a
-fixed rate. **That system is retired and no longer pays anything.** It's
-replaced by shares in a single fixed pool — see
-**[How Rewards Work](../rewards.md)** for why, and what a share is.
-
-Nothing was taken from anyone: no points were ever awarded and no redemption
-was ever paid before the change.
+:::note Looking for points?
+Referrals used to pay points. They now earn shares instead — see
+**[What changed](../what-changed.md)**.
 :::
 
 ## What you earn

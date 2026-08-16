@@ -10,19 +10,10 @@ Following Grainlify on **LinkedIn and X** is **required to be eligible** for
 the Founding Contributor Pool. It earns nothing by itself — it's a
 requirement, not a payment.
 
-:::warning This changed twice
-Following used to pay a one-off 500 points, redeemable for USDC. **That no
-longer pays anything**, and the points system it belonged to is retired.
-
-The platforms changed too: it was GitHub, Telegram and LinkedIn. It is now
-**LinkedIn and X**. Nobody had submitted proof for any platform when this
-changed, so nothing was lost.
-
-Paying real money for a free, reversible action a bot can perform was never
-sustainable, and the cost came out of the same budget that now pays
-contributors. As a requirement it costs nothing, gets more follows rather than
-fewer — everyone who wants a share has to follow — and there's nothing left to
-farm, because there's nothing to collect.
+:::note Looking for points, or for Telegram?
+This changed twice: following stopped paying, and the platforms are no longer
+GitHub, Telegram and LinkedIn. See
+**[What changed](../what-changed.md)**.
 :::
 
 ## What you need to do
