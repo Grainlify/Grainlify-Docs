@@ -1,5 +1,7 @@
 # Cross-Contract Event Correlation Specification
 
+*Last updated: 16 August 2026*
+
 This document details the cross-contract event correlation identifier (`CorrelationId`) convention used across `grainlify-core`, `program-escrow`, and `bounty_escrow`.
 
 ---

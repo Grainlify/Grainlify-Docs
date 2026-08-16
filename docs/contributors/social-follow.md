@@ -4,6 +4,8 @@ sidebar_position: 8
 
 # Social Follow
 
+*Last updated: 16 August 2026*
+
 Following Grainlify on **LinkedIn and X** is **required to be eligible** for
 the Founding Contributor Pool. It earns nothing by itself — it's a
 requirement, not a payment.

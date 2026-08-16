@@ -1,5 +1,7 @@
 # Packed-Flag Storage Optimization
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 Packed-flag storage is a gas optimization technique that stores multiple boolean flags in a single `u32` value, reducing storage slot consumption from N booleans to 1 packed value. This document describes the implementation and test coverage for the program-escrow contract's packed pause flags.

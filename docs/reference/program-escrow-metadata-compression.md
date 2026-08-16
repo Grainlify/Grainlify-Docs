@@ -1,5 +1,7 @@
 # Program Escrow — Metadata Compression
 
+*Last updated: 16 August 2026*
+
 ## Motivation
 
 Every `ProgramMetadata` struct stored on Soroban includes a `custom_fields: Vec<ProgramMetadataField>` where each field has a `key: String`. For programs with many custom fields, the string keys consume significant on-chain storage — each key is encoded as a full UTF-8 string in XDR.

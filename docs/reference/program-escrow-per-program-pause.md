@@ -1,5 +1,7 @@
 # Per-Program Pause Flags
 
+*Last updated: 16 August 2026*
+
 The `program-escrow` contract supports a **Per-Program Pause Override** in addition to the existing global pause flags. This allows the contract admin to surgically pause operations for a single misbehaving or disputed program without impacting the entire contract instance.
 
 ## Architecture

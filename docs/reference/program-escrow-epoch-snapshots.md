@@ -1,5 +1,7 @@
 # Epoch-Boundary Snapshotting for Scheduled Releases
 
+*Last updated: 16 August 2026*
+
 ## Overview
 The Program Escrow contract supports scheduled automated releases for recipients over time. Historically, `trigger_program_releases` evaluated the live `RELEASE_HISTORY` and schedule registry at call time. 
 

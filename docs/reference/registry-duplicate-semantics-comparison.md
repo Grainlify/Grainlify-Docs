@@ -1,5 +1,7 @@
 # Registry Duplicate-Registration Semantics: grainlify-core vs view-facade
 
+*Last updated: 16 August 2026*
+
 > **Status**: Documentation only — no behaviour changes in this document.  
 > **Follow-up**: See [Inconsistency Flag](#inconsistency-flag--follow-up-alignment-issue) at the bottom.
 

@@ -1,5 +1,7 @@
 # Multisig Threshold for High-Value Admin Operations
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The `program-escrow` contract supports an optional M-of-N multisig approval gate

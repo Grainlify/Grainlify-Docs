@@ -1,5 +1,18 @@
 # Cross-Contract ABI Stability Matrix
 
+*Last updated: 16 August 2026*
+
+:::danger Documents contracts that do not exist
+This page describes "all five Grainlify Soroban contracts". **One exists**:
+`grainhack-escrow`, in `Stellar-Contracts/contracts/`, exposing `initialise`,
+`fund`, `commit`, `publish_root`, `claim`, `is_claimed`, `cancel`, `sweep`,
+`balance` and `leaf`. It has never been deployed to any network.
+
+Verified 16 August 2026: none of the program-escrow or bounty-escrow functions
+named here have an implementation in any repository. Kept as a design record.
+See [Payout path — what exists today](./payout-path.md).
+:::
+
 > **Canonical reference** for the public surface area of all five Grainlify Soroban contracts.
 > Every integrator, facade binding author, and contract upgrader **must** consult this document
 > before changing a public function signature, adding or removing a struct field, or reordering

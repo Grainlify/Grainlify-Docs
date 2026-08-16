@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Reviewing Pull Requests
 
+*Last updated: 16 August 2026*
+
 Alongside **[managing applications](./managing-applications.md)**, the
 Maintainer view gives you a live feed of every pull request across your
 connected projects — useful for keeping tabs on what's actually landing,

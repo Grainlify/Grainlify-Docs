@@ -1,5 +1,7 @@
 # PauseStateChanged Event: V1 → V2 Migration Guide
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The `PauseStateChanged` event emitted by the `program-escrow` contract was

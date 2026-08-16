@@ -1,5 +1,7 @@
 # Golden Serialization Tests
 
+*Last updated: 16 August 2026*
+
 Golden serialization tests ensure that our on-chain data structures (XDR) remain
 consistent across contract upgrades. These tests capture the byte-level representation
 of key structs and assert that changes to the codebase do not unintentionally break

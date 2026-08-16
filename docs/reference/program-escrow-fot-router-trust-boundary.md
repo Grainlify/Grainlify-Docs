@@ -1,5 +1,7 @@
 # Program Escrow FoT Router Trust Boundary
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The fee-on-transfer (FoT) router is an **external, caller-configured contract** that

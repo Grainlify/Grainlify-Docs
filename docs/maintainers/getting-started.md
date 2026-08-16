@@ -5,6 +5,8 @@ slug: /maintainers
 
 # Getting Started as a Maintainer
 
+*Last updated: 16 August 2026*
+
 Listing your project on Grainlify puts it in front of contributors actively
 looking for issues to work on, and gives you a dashboard for reviewing who
 wants to help.

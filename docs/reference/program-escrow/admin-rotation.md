@@ -1,5 +1,7 @@
 # Program Escrow Admin Rotation
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 `program-escrow` uses a two-step admin rotation flow:

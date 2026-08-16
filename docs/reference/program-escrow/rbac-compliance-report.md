@@ -1,5 +1,7 @@
 # RBAC Permission Audit Report for Program Escrow
 
+*Last updated: 16 August 2026*
+
 This document describes the new audit query for program delegate permissions in the `program-escrow` contract.
 
 ## Purpose

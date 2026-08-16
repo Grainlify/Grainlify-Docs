@@ -1,5 +1,7 @@
 # Threshold Monitor Boundary Fuzzing
 
+*Last updated: 16 August 2026*
+
 The threshold monitor starts a new window when `timestamp >= window_start + time_window_secs`.
 Its property test generates ordered success/failure sequences at `end - 1`, `end`, and `end + 1`.
 

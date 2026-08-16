@@ -5,6 +5,8 @@ slug: /intro
 
 # Welcome to Grainlify Docs
 
+*Last updated: 16 August 2026*
+
 Grainlify connects open-source maintainers with contributors — maintainers
 list their projects and issues, contributors find work, build a public
 track record, and earn rewards along the way.

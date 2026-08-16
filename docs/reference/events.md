@@ -1,5 +1,7 @@
 # Bounty Escrow — Events Reference
 
+*Last updated: 16 August 2026*
+
 Module: `bounty_escrow/contracts/escrow/src/events.rs`  
 Schema version: **EVENT_VERSION_V2** (`version: u32 = 2`)
 

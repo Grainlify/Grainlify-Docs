@@ -1,5 +1,7 @@
 # Fee Ceiling Division
 
+*Last updated: 16 August 2026*
+
 FeeConfig percentage fees use ceiling division:
 
 ```text

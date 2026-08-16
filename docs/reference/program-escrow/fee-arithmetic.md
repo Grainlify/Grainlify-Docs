@@ -1,5 +1,7 @@
 # Fee Arithmetic in Program Escrow
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The Program Escrow contract uses precise fee arithmetic to manage prize pools and fee collection. Ensuring no value is lost or created out of thin air is critical for security and financial integrity.

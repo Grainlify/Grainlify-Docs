@@ -1,5 +1,7 @@
 # View Facade Cross-Contract Call Safety
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 This document is the security audit for cross-contract call safety in

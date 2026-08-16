@@ -1,5 +1,7 @@
 # Fee Management in Program Escrow
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The Program Escrow contract supports configurable fee deduction on both lock and payout operations. Fees are collected to sustain the platform and are sent to a designated fee recipient address.

@@ -1,5 +1,7 @@
 # Bulk-Release Single-Read Optimization
 
+*Last updated: 16 August 2026*
+
 **Branch:** `feature/bulk-release-single-read-optimization`  
 **File:** `contracts/program-escrow/src/lib.rs`  
 **Function:** `release_schedule`  

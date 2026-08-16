@@ -1,5 +1,7 @@
 # Program Escrow Delegate Permission Boundaries
 
+*Last updated: 16 August 2026*
+
 This document clarifies the permission boundaries for delegates in the Program Escrow contract, specifically regarding administrative configuration setters.
 
 ## Administrative Configuration vs Delegate Permissions

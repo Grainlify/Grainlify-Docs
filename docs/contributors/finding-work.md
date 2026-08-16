@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Finding a Project or Issue
 
+*Last updated: 16 August 2026*
+
 Grainlify gives you four ways to find something to work on: a curated
 **Discover** feed, a filterable **Browse** catalog, a browsable **Ecosystems**
 directory, and global **Search**.

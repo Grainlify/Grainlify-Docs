@@ -1,5 +1,7 @@
 # Program Escrow — Archived Payout History Storage Tiering
 
+*Last updated: 16 August 2026*
+
 **Issue:** Migrate archived program `payout_history` to the persistent storage tier on `archive_program`
 **Contract:** `contracts/program-escrow/src/lib.rs`
 

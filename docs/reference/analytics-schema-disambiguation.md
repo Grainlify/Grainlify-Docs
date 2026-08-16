@@ -1,5 +1,7 @@
 # Cross-Contract ABI Stability Matrix: Analytics Schema Disambiguation
 
+*Last updated: 16 August 2026*
+
 ## Overview
 
 The `grainlify` project contains a naming collision between two distinct `Analytics` structs in different modules and contracts. While they share the same name (`Analytics`), they have entirely different, incompatible schemas.
