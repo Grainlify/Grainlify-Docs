@@ -7,6 +7,13 @@ slug: /rewards
 
 *Last updated: 16 August 2026*
 
+:::info Not yet funded, and nothing has been paid
+The Founding Contributor Pool **is not yet funded and no payout has been
+made**. Everything below describes how rewards are designed to work, not
+something that has happened. See
+**[Payout path](./reference/payout-path.md)** for what currently runs.
+:::
+
 Grainlify has two reward tracks, and they do different jobs:
 
 :::info Two tracks
