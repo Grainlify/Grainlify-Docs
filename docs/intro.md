@@ -24,11 +24,18 @@ to connect your project and start reviewing applications from contributors.
 
 ## Technical reference
 
-The **Technical Reference** section of the sidebar covers the Soroban smart
-contract suite that powers Grainlify — bounty escrow, program escrow,
-events, database schema, and gas optimization notes. It's written for
-developers working on the Grainlify platform itself, not for contributors
-or maintainers using the product day to day.
+The **Technical Reference** section is for developers working on Grainlify
+itself, not for contributors or maintainers using the product. It covers how
+support requests are routed, how follow proofs are reviewed, how identity
+verification works, and — in
+**[Payout path](./reference/payout-path.md)** — an honest account of which
+parts of the payout system exist and which do not.
+
+There is also an **Archive** section. It holds design documents for a Soroban
+contract suite that was never built: the pages describe `publish_program`,
+`lock_program_funds`, `single_payout` and similar, none of which has an
+implementation in any Grainlify repository. They are kept as a record of
+decisions made, not as a description of working software.
 
 ## Related repositories
 

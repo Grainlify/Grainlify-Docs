@@ -7,6 +7,13 @@ slug: /rewards
 
 *Last updated: 16 August 2026*
 
+:::info Not yet funded, and nothing has been paid
+The Founding Contributor Pool **is not yet funded and no payout has been
+made**. Everything below describes how rewards are designed to work, not
+something that has happened. See
+**[Payout path](./reference/payout-path.md)** for what currently runs.
+:::
+
 Grainlify has two reward tracks, and they do different jobs:
 
 :::info Two tracks
@@ -17,15 +24,10 @@ earned overwhelmingly by getting pull requests merged, and the pool is shared
 out once, at the end of the first GrainHack.
 :::
 
-:::warning The points system is retired
-Grainlify used to pay a fixed rate — 100 points per verified referral, 500 for
-following our social accounts, redeemable at 100 points = $1 USDC. **That
-system no longer pays anything.**
-
-No points were ever awarded to any account and no redemption was ever paid, so
-nothing was taken from anyone. See
-**[Point Redemption (Retired)](./contributors/rewards-and-redemptions.md)** for
-the detail.
+:::note The points system is retired
+Points can no longer be earned or redeemed. Nothing was taken from anyone — no
+points were ever awarded and no redemption was ever paid. See
+**[What changed](./what-changed.md)**.
 :::
 
 ## Track 1: Rank — earned by contributing
