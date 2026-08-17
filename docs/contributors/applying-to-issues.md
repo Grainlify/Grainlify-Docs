@@ -20,6 +20,13 @@ You can apply to as many open issues as you like. Keep in mind more than one
 person can apply to the same issue, and the maintainer chooses who gets it —
 a clear, specific message about how you'd tackle the problem goes a long way.
 
+:::note GrainHack issues work differently
+Issues in a [GrainHack](./grainhack.md) event are assigned by a **weighted
+draw** rather than chosen by the maintainer. That applies only while an event
+is running, on issues with a prize pool behind them — everywhere else, the
+maintainer reviews the applications and picks.
+:::
+
 :::tip Write a message that gets you picked
 Maintainers are comparing applications, often several on the same issue.
 "I'll take this" tells them nothing. A sentence or two on *how* you'd
