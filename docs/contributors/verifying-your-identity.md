@@ -11,9 +11,18 @@ confirm real people are behind the accounts earning and receiving rewards.
 
 ## Why it matters
 
-- It's what places you in a **[Founding Contributor Pool wave](../rewards.md)**
-  — the order people verify in decides who gets the Founding and Early Member
-  multipliers, and those waves close for good once full.
+- It's one of the two things that place you in a **[Founding Contributor Pool
+  wave](../rewards.md)** — the other is an approved
+  [social follow proof](./social-follow.md). You're given a wave and multiplier
+  when you've done both, in the order people complete the second one, and those
+  waves close for good once full.
+
+  :::warning Verifying on its own doesn't put you in the pool
+  Verifying without an approved follow proof gets you no wave, and a wave held
+  without one pays nothing when the pool is shared out. If you've already
+  verified, check **Settings → Rewards** — it shows your position and whether
+  you're eligible.
+  :::
 - It's what makes a **[referral](./referrals.md)** count — when someone you
   referred verifies, that's the moment your shares are recorded.
 - It's expected before any payout, since payouts send real USDC to a real
